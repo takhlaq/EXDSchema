@@ -1,0 +1,6 @@
+name: HousingLayoutLimit
+fields:
+  - name: LimitNumSS
+  - name: LimitNumS
+  - name: LimitNumM
+  - name: LimitNumL

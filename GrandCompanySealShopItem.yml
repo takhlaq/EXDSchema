@@ -1,0 +1,16 @@
+name: GrandCompanySealShopItem
+fields:
+  - name: SetNum
+  - name: Seal
+  - name: ItemId
+    type: link
+    targets:
+      - Item
+  - name: ValidRank
+    type: link
+    targets:
+      - GrandCompanyRank
+  - name: Category
+    type: link
+    targets:
+      - GCShopItemCategory

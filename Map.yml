@@ -1,38 +1,32 @@
 name: Map
-displayField: PlaceName
+displayField: Path
 fields:
-  - name: Id
+  - name: Path
   - name: DiscoveryFlag
-  - name: MapMarkerRange
-  - name: SizeFactor
-  - name: PlaceNameRegion
+  - name: Unknown
+  - name: Scale
+  - name: CategoryNameUI
     type: link
-    targets: [PlaceName]
-  - name: PlaceName
+    targets:
+      - PlaceName
+  - name: NameUI
     type: link
-    targets: [PlaceName]
-  - name: PlaceNameSub
+    targets:
+      - PlaceName
+  - name: FloorNameUI
     type: link
-    targets: [PlaceName]
+    targets:
+      - PlaceName
   - name: TerritoryType
     type: link
-    targets: [TerritoryType]
-  - name: OffsetX
-  - name: OffsetY
+    targets:
+      - TerritoryType
+  - name: Unknown1
+  - name: Unknown2
   - name: DiscoveryIndex
-  - name: MapCondition
-    type: link
-    targets: [MapCondition]
   - name: PriorityCategoryUI
   - name: PriorityUI
   - name: MapType
-    type: link
-    targets: [MapType]
-  - name: Unknown2
-  - name: MapReplace
-    type: link
-    targets: [MapReplace]
-  - name: MapIndex
-  - name: DiscoveryArrayByte
+  - name: PriorityFloorUI
+  - name: IsUint16Discovery
   - name: IsEvent
-  - name: Unknown1

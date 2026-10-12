@@ -1,19 +1,24 @@
 name: CraftLeve
-displayField: Leve
 fields:
   - name: Leve
     type: link
-    targets: [Leve]
-  - name: CraftLeveTalk
+    targets:
+      - Leve
+  - name: Talk
     type: link
-    targets: [CraftLeveTalk]
+    targets:
+      - CraftLeveTalk
   - name: Item
     type: array
     count: 4
     fields:
       - type: link
-        targets: [Item]
-  - name: ItemCount
+        targets:
+          - Item
+  - name: ItemNum
     type: array
     count: 4
-  - name: Repeats
+  - name: AdditionalTimes
+  - name: HQ
+    type: array
+    count: 4

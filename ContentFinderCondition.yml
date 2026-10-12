@@ -1,26 +1,34 @@
 name: ContentFinderCondition
-displayField: Name
 fields:
-  - name: Name
-  - name: NameShort
-  - name: LevelingRoulette
-  - name: HighLevelRoulette
-  - name: MSQRoulette
-  - name: GuildHestRoulette
-  - name: ExpertRoulette
-  - name: TrialRoulette
-  - name: DailyFrontlineChallenge
-  - name: LevelCapRoulette
-  - name: MentorRoulette
-  - name: Unknown0
+  - name: InstanceContentId
+    type: link
+    targets:
+      - InstanceContent
+  - name: ItemLevel
+    type: link
+    targets:
+      - ItemLevel
+  - name: Unknown
+  - name: RandomContentType
+    type: link
+    targets:
+      - ContentRoulette
+  - name: FinderPartyCondition
+  - name: RewardType
+  - name: ContentMemberType
+    type: link
+    targets:
+      - ContentMemberType
   - name: Unknown1
   - name: Unknown2
+  - name: LevelMin
   - name: Unknown3
-  - name: Unknown4
-  - name: AllianceRoulette
-  - name: FeastTeamRoulette
-  - name: NormalRaidRoulette
-  - name: Unknown5
+  - name: DisableHalfwayProgress
+  - name: Halfway
+  - name: EnableFinder
+  - name: DifferentiateDPS
+  - name: Alliance
+  - name: FreeRole
   - name: Unknown6
   - name: Unknown7
   - name: Unknown8
@@ -42,108 +50,5 @@ fields:
   - name: Unknown24
   - name: Unknown25
   - name: Unknown26
-  - name: CrystallineConflictCasualRoulette
-  - name: CrystallineConflictRankedRoulette
-  - name: ShortCode
-  - name: Unknown29
-    comment: "This would show Addon#102618, if not 0, but the row is empty."
-  - name: ContentCloseCycle
-    type: link
-    targets: [ContentCloseCycle]
-  - name: UnlockCriteria
-    type: link
-    condition:
-      switch: UnlockType
-      cases:
-        1: [Quest]
-        2: [InstanceContent]
-  - name: UnlockCriteria2
-    type: link
-    condition:
-      switch: UnlockType2
-      cases:
-        1: [Quest]
-        2: [InstanceContent]
-  - name: JournalGenre
-    type: link
-    targets: [JournalGenre]
-  - name: Unknown59
-  - name: Image
-    type: icon
-  - name: Icon
-    type: icon
-  - name: Unknown32
-  - name: Unknown58
-  - name: TerritoryType
-    type: link
-    targets: [TerritoryType]
-  - name: Content
-    type: link
-    condition:
-      switch: ContentLinkType
-      cases:
-        1: [InstanceContent]
-        2: [PartyContent]
-        3: [PublicContent]
-        4: [GoldSaucerContent]
-        5: [QuestBattle]
-  - name: ItemLevelRequired
-  - name: ItemLevelSync
-  - name: SortKey
-  - name: ContentLinkType
-  - name: RequiredExVersion
-    type: link
-    targets: [ExVersion]
-  - name: AcceptClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
-  - name: ContentMemberType
-    type: link
-    targets: [ContentMemberType]
-  - name: Unknown34
-    comment: "Used to control what is displayed as player count (Addon#10806, Addon#10805, etc.). Has some weird logic behind it."
-  - name: QueueMaxPlayers
-  - name: UnlockType
-  - name: UnlockType2
-  - name: ClassJobLevelRequired
-  - name: ClassJobLevelSync
-  - name: LootModeType
-    type: link
-    targets: [LootModeType]
-  - name: RaidFinderParam
-    type: link
-    targets: [RaidFinderParam]
-  - name: ContentType
-    type: link
-    targets: [ContentType]
-  - name: ContentUICategory
-    type: link
-    targets: [ContentUICategory]
-  - name: PenaltyTimestampArrayIndex
-    comment: "Index in PlayerState.PenaltyTimestamps"
-  - name: Unknown41
-  - name: PvP
-  - name: Unknown_70_2
-  - name: FixedItemLevelSync
-    comment: "If true, the players item level is always set to ItemLevelSync (up-sync and down-sync possible)."
-  - name: AllowUndersized
-  - name: NeedsMemberInEveryParty
-  - name: Unknown57
-  - name: AllowReplacement
-  - name: AllowMinimumIL
-  - name: AllowExplorerMode
-  - name: RatedMatch
-  - name: Rated
-  - name: Unknown47
-  - name: IsInDutyFinder
-  - name: HighEndDuty
-  - name: Unknown49
-  - name: HasOnePlayerPerJobDetails
-  - name: Unknown51
-  - name: DutyRecorderAllowed
-  - name: Unknown52
-  - name: IsRegistrationHomeWorldLimited
-  - name: Unknown54
-  - name: Unknown55
-  - name: Unknown56
-  - name: IsRegistrationAllowedFromAnyDataCenter
+  - name: Unknown27
+  - name: Unknown28

@@ -2,7 +2,8 @@ name: FCAuthority
 displayField: Name
 fields:
   - name: Name
-  - name: FCAuthorityCategory
+  - name: Category
     type: link
-    targets: [FCAuthorityCategory]
-  - name: Unknown0
+    targets:
+      - FCAuthorityCategory
+  - name: Sort

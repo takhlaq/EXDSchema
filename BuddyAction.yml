@@ -2,10 +2,9 @@ name: BuddyAction
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Icon
     type: icon
-  - name: IconStatus
+  - name: StatusIcon
     type: icon
-  - name: UnlockLink
-  - name: Sort
+  - name: Reward

@@ -3,28 +3,29 @@ displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Name
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: Unknown1
-  - name: Quest
-    type: link
-    targets: [Quest]
+  - name: Help
+  - name: UIName
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: EventHandler
   - name: Icon
     type: icon
   - name: Action
     type: link
-    targets: [Action]
-  - name: StackSize
-  - name: Category
-    type: link
-    targets: [EventItemCategory]
+    targets:
+      - Action
+  - name: Unknown
+  - name: StackMax
   - name: CastTime
-  - name: CastTimeline
+  - name: CastTimeLine
     type: link
-    targets: [EventItemCastTimeline]
+    targets:
+      - EventItemCastTimeLine
   - name: Timeline
+    type: link
+    targets:
+      - EventItemTimeLine

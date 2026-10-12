@@ -3,19 +3,13 @@ fields:
   - name: PosX
   - name: PosY
   - name: PosZ
-  - name: Elezen
+  - name: Elezene
   - name: Lalafell
-  - name: Miqote
-  - name: Roe
-  - name: Hrothgar
-  - name: Viera
-  - name: Unknown0
-  - name: Hyur_F
-  - name: Elezen_F
+  - name: Migote
+  - name: Roegadyn
+  - name: Hyuran_F
+  - name: Elezene_F
   - name: Lalafell_F
-  - name: Miqote_F
-  - name: Roe_F
-  - name: Hrothgar_F
-  - name: Viera_F
-  - name: Unknown_70
+  - name: Migote_F
+  - name: Roegadyn_F
   - name: EID

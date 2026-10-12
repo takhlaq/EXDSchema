@@ -1,6 +1,10 @@
 name: Carry
 fields:
   - name: Model
+    type: link
+    targets:
+      - ModelChara
   - name: Timeline
-  - name: Unknown0
-  - name: Unknown1
+    type: link
+    targets:
+      - ActionTimeline

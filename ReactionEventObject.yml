@@ -1,6 +1,0 @@
-name: ReactionEventObject
-fields:
-  - name: ObjectInfo
-    type: link
-    targets: [ReactionEventObjectInfo]
-  - name: SharedGroup

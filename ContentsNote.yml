@@ -1,23 +1,22 @@
 name: ContentsNote
+displayField: Name
 fields:
   - name: Name
-  - name: Description
-  - name: ReqUnlock
+  - name: Help
+  - name: CondArg
+  - name: RewardArg
+    type: array
+    count: 2
+  - name: OpenLevel
+  - name: OpenHowTo
     type: link
-    targets: [Quest]
-  - name: Icon
-    type: icon
-  - name: RequiredAmount
-  - name: ExpMultiplier
-  - name: GilRward
-  - name: ExpCap
-  - name: LevelUnlock
-  - name: HowTo
+    targets:
+      - HowTo
+  - name: Category
     type: link
-    targets: [HowTo]
-  - name: ContentType
-    type: link
-    targets: [ContentsNoteCategory]
-  - name: MenuOrder
-  - name: Reward0
-  - name: Reward1
+    targets:
+      - ContentsNoteCategory
+  - name: UIPriority
+  - name: Reward
+    type: array
+    count: 2

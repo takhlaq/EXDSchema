@@ -1,15 +1,17 @@
 name: RetainerTaskNormal
-displayField: Item
 fields:
   - name: Item
     type: link
-    targets: [Item]
-  - name: GatheringLog
+    targets:
+      - Item
+  - name: GatheringItem
     type: link
-    targets: [GatheringItem]
-  - name: FishingLog
+    targets:
+      - GatheringItem
+  - name: FishParameter
     type: link
-    targets: [SpearfishingItem, FishParameter]
-  - name: Quantity
+    targets:
+      - FishParameter
+  - name: Stack
     type: array
-    count: 5
+    count: 3

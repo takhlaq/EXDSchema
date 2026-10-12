@@ -2,13 +2,15 @@ name: Materia
 fields:
   - name: Item
     type: array
-    count: 16
+    count: 10
     fields:
       - type: link
-        targets: [Item]
-  - name: Value
-    type: array
-    count: 16
-  - name: BaseParam
+        targets:
+          - Item
+  - name: Param
     type: link
-    targets: [BaseParam]
+    targets:
+      - BaseParam
+  - name: ParamValue
+    type: array
+    count: 10

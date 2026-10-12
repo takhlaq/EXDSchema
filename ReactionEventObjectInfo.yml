@@ -1,5 +1,0 @@
-name: ReactionEventObjectInfo
-fields:
-  - name: EObj
-    type: link
-    targets: [EObj, EObjName]

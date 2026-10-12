@@ -1,0 +1,6 @@
+name: CraftCrystalType
+fields:
+  - name: ItemId
+    type: link
+    targets:
+      - Item

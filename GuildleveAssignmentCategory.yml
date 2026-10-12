@@ -1,8 +1,5 @@
 name: GuildleveAssignmentCategory
 fields:
-  - name: Category
+  - name: Filter
     type: array
     count: 8
-    fields:
-      - type: link
-        targets: [LeveAssignmentType]

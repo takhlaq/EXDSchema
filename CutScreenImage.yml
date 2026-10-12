@@ -1,6 +1,5 @@
 name: CutScreenImage
 fields:
-  - name: Image
-  - name: Unknown1
   - name: Type
-  - name: Unknown0
+  - name: Icon
+    type: icon

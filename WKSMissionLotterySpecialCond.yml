@@ -1,7 +1,0 @@
-name: WKSMissionLotterySpecialCond
-fields:
-  - name: WeatherRequired
-    type: link
-    targets: [Weather]
-  - name: StartTimeHour
-  - name: EndTimeHour

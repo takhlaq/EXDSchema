@@ -4,88 +4,59 @@ fields:
   - name: Name
   - name: Item
     type: array
-    count: 60
+    count: 160
     fields:
-      - name: ReceiveCount
+      - name: SetNum
         type: array
         count: 2
-      - name: CurrencyCost
+      - name: NumOfCurrency
         type: array
         count: 3
-      - name: Item
+      - name: ItemId
         type: array
         count: 2
         fields:
           - type: link
-            targets: [Item]
+            targets:
+              - Item
       - name: Category
         type: array
         count: 2
-        fields:
-          - type: link
-            targets: [SpecialShopItemCategory]
-      - name: ItemCost
+      - name: Currency
         type: array
         count: 3
         fields:
           - type: link
-            targets: [Item]
+            targets:
+              - Item
       - name: Quest
-        type: link
-        targets: [Quest]
-      - name: Unknown0
-        type: array
-        count: 4
-      - name: AchievementUnlock
-        type: link
-        targets: [Achievement]
-      - name: Unknown2
-      - name: CollectabilityCost
-        type: array
-        count: 3
-      - name: PatchNumber
-      - name: CostType
-        comment: Indicates what the Cost Id links to. 3 = SpecialBucketId, rest items?
-        type: array
-        count: 3
-      - name: Unknown1
-        type: array
-        count: 5
-      - name: Order
-      - name: ReceiveHq
         type: array
         count: 2
-    relations:
-      ReceiveItems:
-        - Item
-        - ReceiveCount
-        - ReceiveHq
-      ItemCosts:
-        - ItemCost
-        - CurrencyCost
-        - CostType
-        - CollectabilityCost
+        fields:
+          - type: link
+            targets:
+              - Quest
+      - name: Achievement
+        type: link
+        targets:
+          - Achievement
+      - name: IsCurrencyHq
+        type: array
+        count: 3
   - name: Quest
     type: link
-    targets: [Quest]
-  - name: CustomTalk
+    targets:
+      - Quest
+  - name: QualifiedTalk
     type: link
-    targets: [CustomTalk]
-  - name: RequiredContentFinderCondition
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: UnqualifiedTalk
     type: link
-    targets: [ContentFinderCondition]
-  - name: CompleteText
-    type: link
-    targets: [DefaultTalk]
-  - name: NotCompleteText
-    type: link
-    targets: [DefaultTalk]
-  - name: RequiredFestival
-    type: link
-    targets: [Festival]
-  - name: RequiredFestivalPhase
-  - name: UseCurrencyType
-  - name: Unknown3
-  - name: RequiredContentFinderConditionComplete
-    comment: If this is true, then the CFC needs to be completed; If this is false, then the CFC just needs to be unlocked
-  - name: Unknown4
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: IsCurrencyType

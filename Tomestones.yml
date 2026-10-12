@@ -1,3 +1,9 @@
 name: Tomestones
 fields:
-  - name: WeeklyLimit
+  - name: CatalogId
+    type: link
+    targets:
+      - Item
+  - name: WeeklyCap
+  - name: Slot
+  - name: WorkIndex

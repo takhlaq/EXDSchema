@@ -2,13 +2,14 @@ name: MonsterNote
 displayField: Name
 fields:
   - name: Name
-  - name: Reward
-  - name: MonsterNoteTarget
+  - name: RewardExp
+  - name: Target
     type: array
     count: 4
     fields:
       - type: link
-        targets: [MonsterNoteTarget]
-  - name: Count
+        targets:
+          - MonsterNoteTarget
+  - name: NeededKills
     type: array
     count: 4

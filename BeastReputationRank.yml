@@ -1,9 +1,13 @@
 name: BeastReputationRank
-displayField: Name
+displayField: Singular
 fields:
-  - name: Name
-  - name: AlliedNames
+  - name: Singular
+  - name: Plural
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
   - name: Color
-    type: link
-    targets: [UIColor]
-  - name: RequiredReputation
+  - name: MaxReputationValue

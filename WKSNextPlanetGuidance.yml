@@ -1,6 +1,0 @@
-name: WKSNextPlanetGuidance
-displayField: Text
-fields:
-  - name: Text
-  - name: Backdrop
-    type: icon

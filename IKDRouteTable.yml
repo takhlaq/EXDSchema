@@ -1,9 +1,0 @@
-name: IKDRouteTable
-displayField: IndigoRoute
-fields:
-  - name: IndigoRoute
-    type: link
-    targets: [IKDRoute]
-  - name: RubyRoute
-    type: link
-    targets: [IKDRoute]

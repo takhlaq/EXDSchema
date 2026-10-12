@@ -1,117 +1,80 @@
 name: InstanceContent
-displayField: ContentFinderCondition
+displayField: Name
 fields:
-  - name: NewPlayerBonusGil
-  - name: NewPlayerBonusExp
-  - name: FinalBossExp
-  - name: Unknown0
-  - name: BossExp
+  - name: Name
+  - name: Text1Name
+  - name: RewardBeginnerBonusGil
+  - name: RewardBeginnerBonusExp
+  - name: RewardUnknown
+  - name: RewardUnknown1
+  - name: RewardUnknown2
+  - name: RewardUnknown3
+  - name: RewardUnknown4
+  - name: RewardUnknown5
+  - name: RewardTotalExp
+  - name: RewardTotalGil
+  - name: RewardUnknown6
+  - name: RewardBeginnerBonusA
+  - name: RewardClearA
+  - name: RewardClearB
+  - name: RewardMiddleA
     type: array
-    count: 5
-  - name: InstanceClearExp
-  - name: InstanceClearGil
-  - name: InstanceContentRewardItem
-    type: link
-    targets: [InstanceContentRewardItem]
-  - name: NewPlayerBonusA
-  - name: NewPlayerBonusB
-  - name: FinalBossCurrencyA
-  - name: FinalBossCurrencyB
-  - name: FinalBossCurrencyC
-  - name: BossCurrencyA
-    type: array
-    count: 5
-  - name: BossCurrencyB
-    type: array
-    count: 5
-  - name: BossCurrencyC
-    type: array
-    count: 5
+    count: 17
   - name: Unknown1
-  - name: Unknown8
-  - name: LimitedTimeBonus
-  - name: Cutscene
+  - name: StartCutscene
     type: link
-    targets: [Cutscene]
-  - name: LGBEventRange
-    comment: Points to the game object ID of the exit range. 
-  - name: InstanceContentTextDataBossStart
+    targets:
+      - Cutscene
+  - name: EntranceRect
     type: link
-    targets: [InstanceContentTextData]
-  - name: InstanceContentTextDataBossEnd
+    targets:
+      - Level
+  - name: TerritoryType
     type: link
-    targets: [InstanceContentTextData]
-  - name: BNpcBaseBoss
+    targets:
+      - TerritoryType
+  - name: Image
+  - name: BossMessage
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - InstanceContentTextData
+  - name: BossName
     type: link
-    targets: [BNpcBase]
-  - name: InstanceContentTextDataObjectiveStart
+    targets:
+      - BNpcName
+  - name: ContentTextStart
     type: link
-    targets: [InstanceContentTextData]
-  - name: InstanceContentTextDataObjectiveEnd
+    targets:
+      - InstanceContentTextData
+  - name: ContentTextEnd
     type: link
-    targets: [InstanceContentTextData]
-  - name: Unknown2
-  - name: ReqInstance
+    targets:
+      - InstanceContentTextData
+  - name: InstanceBuff
     type: link
-    targets: [InstanceContent]
-  - name: InstanceContentBuff
+    targets:
+      - InstanceContentBuff
+  - name: Unknown3
+  - name: Time
+  - name: Music
     type: link
-    targets: [InstanceContentBuff]
-  - name: TimeLimitmin
-  - name: BGM
+    targets:
+      - BGM
+  - name: ClearMusic
     type: link
-    targets: [BGM]
-  - name: WinBGM
-    type: link
-    targets: [BGM]
-  - name: ContentFinderCondition
-    type: link
-    targets: [ContentFinderCondition]
-  - name: SortKey
-  - name: ContentRoute
-    type: link
-    condition:
-      switch: InstanceContentType
-      cases:
-        8: [Tutorial]
-        16: [IKDRoute]
-        19: [VVDData] # Variant Dungeon
-        20: [VVDData] # Criterion Dungeon
-  - name: ContentDirectorManagedSG
-    type: link
-    targets: [ContentDirectorManagedSG]
-  - name: ContentTodo
-    type: link
-    targets: [ContentTodo]
+    targets:
+      - BGM
+  - name: ItemLevelMax
+  - name: Sortkey
   - name: Unknown6
-  - name: LookupIndex
-    comment: Used for certain duties. If not 0, then the client reads from a special unlock/completed array in PlayerState.
-  - name: ContentEventItem
+  - name: Type
     type: link
-    targets: [ContentEventItem]
-  - name: ContentDirectorBattleTalk
-    type: link
-    targets: [ContentDirectorBattleTalk]
-  - name: PartyCondition
-  - name: InstanceContentType
-    type: link
-    targets: [InstanceContentType]
-  - name: WeekRestriction
-  - name: Unknown9
-  - name: QTE1
-    type: link
-    targets: [QTE]
-  - name: QTE2
-    type: link
-    targets: [QTE]
-  - name: Unknown12
-  - name: ContentAttributeRect
-    type: link
-    targets: [ContentAttributeRect]
-  - name: Unknown13
-  - name: Unknown14
-  - name: Unknown15
-  - name: Unknown16
-  - name: Unknown17
-  - name: Unknown18
-  - name: AllowPhoenixDown
+    targets:
+      - InstanceContentType
+  - name: UnknownType
+  - name: LevelMax
+  - name: Unknown7
+  - name: Unknown8

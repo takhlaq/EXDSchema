@@ -1,4 +1,0 @@
-name: AddonTransient
-displayField: Text
-fields:
-  - name: Text

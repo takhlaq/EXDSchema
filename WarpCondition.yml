@@ -1,18 +1,17 @@
 name: WarpCondition
 fields:
-  - name: RequiredQuest1
+  - name: CompletedQuest
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - Quest
+  - name: NotAcceptedQuest
     type: link
-    targets: [Quest]
-  - name: RequiredQuest2
-    type: link
-    targets: [Quest]
-  - name: RequiredQuest3
-    type: link
-    targets: [Quest]
-  - name: RequiredQuest4
-    type: link
-    targets: [Quest]
+    targets:
+      - Quest
   - name: Gil
-  - name: QuestReward
+  - name: Reward
   - name: ClassLevel
-  - name: CompleteParam
+  - name: CompletedQuestOperator

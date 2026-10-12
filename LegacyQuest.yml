@@ -1,9 +1,8 @@
 name: LegacyQuest
+displayField: Name
 fields:
-  - name: Text
-  - name: String
-  - name: Genre
-    type: link
-    targets: [JournalGenre]
-  - name: LegacyQuestID
+  - name: Name
+  - name: Journal
+  - name: LegacyQuestId
   - name: SortKey
+  - name: Genre

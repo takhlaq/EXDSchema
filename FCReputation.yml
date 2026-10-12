@@ -1,10 +1,9 @@
 name: FCReputation
-displayField: Name
+displayField: NameText
 fields:
-  - name: Name
-  - name: PointsToNext
-  - name: RequiredPoints
+  - name: NameText
+  - name: NextPoint
+  - name: CurrentPoint
   - name: Color
-    type: link
-    targets: [UIColor]
+    type: color
   - name: DiscountRate

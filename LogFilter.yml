@@ -2,7 +2,7 @@ name: LogFilter
 displayField: Name
 fields:
   - name: Name
-  - name: Example
+  - name: Help
   - name: Caster
   - name: Target
   - name: LogKind

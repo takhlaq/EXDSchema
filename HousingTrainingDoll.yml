@@ -1,6 +1,0 @@
-name: HousingTrainingDoll
-displayField: Base
-fields:
-  - name: Base
-    type: link
-    targets: [BNpcBase]

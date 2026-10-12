@@ -1,57 +1,14 @@
 name: Transformation
 fields:
-  - name: Speed
-  - name: Scale
-  - name: Action6
-    type: link
-    targets: [Action]
-  - name: BNpcCustomize
-    type: link
-    targets: [BNpcCustomize]
-  - name: NpcEquip
-    type: link
-    targets: [NpcEquip]
-  - name: BNpcName
-    type: link
-    targets: [BNpcName]
   - name: Action
     type: array
-    count: 7
+    count: 2
     fields:
       - type: link
-        targets: [Action]
-  - name: RemoveAction
+        targets:
+          - Action
+  - name: ModelChara
     type: link
-    targets: [Action]
-  - name: StartVFX
-    type: link
-    targets: [VFX]
-  - name: EndVFX
-    type: link
-    targets: [VFX]
-  - name: Action7
-    type: link
-    targets: [Action]
-  - name: Model
-    type: link
-    targets: [ModelChara]
-  - name: Unknown0
-  - name: Unknown1
-  - name: RPParameter
-    type: link
-    targets: [RPParameter]
-  - name: Unknown3
-  - name: Unknown4
+    targets:
+      - ModelChara
   - name: ExHotbarEnableConfig
-    type: array
-    count: 7
-  - name: Unknown11
-  - name: Unknown12
-  - name: Unknown13
-  - name: IsPvP
-  - name: IsEvent
-  - name: PlayerCamera
-  - name: Unknown14
-  - name: Unknown15
-  - name: Unknown16
-  - name: Unknown17

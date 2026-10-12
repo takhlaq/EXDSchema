@@ -1,11 +1,13 @@
 name: RetainerTaskParameter
 fields:
-  - name: ItemLevelDoW
+  - name: TimeCorrectionNormal
+  - name: TimeCorrectionRandom
+  - name: BattleStack
     type: array
-    count: 4
-  - name: PerceptionDoL
+    count: 2
+  - name: GatheringStack
     type: array
-    count: 4
-  - name: PerceptionFSH
+    count: 2
+  - name: FishingStack
     type: array
-    count: 4
+    count: 2

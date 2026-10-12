@@ -1,14 +1,8 @@
 name: InstanceContentType
 fields:
-  - name: StartLogMessage
+  - name: Sortkey
+  - name: Genre
+  - name: ContentType
     type: link
-    targets: [LogMessage]
-  - name: LookupIndex
-    comment: Used for certain duties. If not 0, then the client reads from a special unlock/completed array in PlayerState.
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
-  - name: Unknown6
-  - name: SupportsPartyMemberPortraits
-  - name: Unknown8
+    targets:
+      - ContentType

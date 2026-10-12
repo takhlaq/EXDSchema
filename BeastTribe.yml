@@ -1,35 +1,16 @@
 name: BeastTribe
-displayField: Name
+displayField: Singular
 fields:
-  - name: Name
+  - name: Singular
   - name: Plural
-  - name: NameRelation
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Pronoun
-  - name: Article
+  - name: ReputationValue
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
   - name: DEF
-  - name: IconReputation
+  - name: ReputationIcon
     type: icon
-  - name: Icon
+  - name: RewardIcon
     type: icon
-  - name: IntersocietalQuest
-    type: link
-    targets: [Quest]
-  - name: Level
-    type: link
-    targets: [Level]
-  - name: CurrencyItem
-    type: link
-    targets: [Item]
-  - name: MinLevel
-  - name: BeastRankBonus
-    type: link
-    targets: [BeastRankBonus]
-  - name: MaxRank
-  - name: Expansion
-    type: link
-    targets: [ExVersion]
-  - name: DisplayOrder
-  - name: Unknown0

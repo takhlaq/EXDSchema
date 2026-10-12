@@ -1,4 +1,0 @@
-name: HousingMateAuthority
-displayField: Permission
-fields:
-  - name: Permission

@@ -2,51 +2,31 @@ name: CraftAction
 displayField: Name
 fields:
   - name: Name
-  - name: Description
-  - name: QuestRequirement
+  - name: Help
+  - name: Action
+    type: array
+    count: 8
+    fields:
+      - type: link
+        targets:
+          - Action
+  - name: Timeline
     type: link
-    targets: [Quest]
-  - name: CRP
+    targets:
+      - ActionTimeline
+  - name: SubTimeline
     type: link
-    targets: [CraftAction]
-  - name: BSM
-    type: link
-    targets: [CraftAction]
-  - name: ARM
-    type: link
-    targets: [CraftAction]
-  - name: GSM
-    type: link
-    targets: [CraftAction]
-  - name: LTW
-    type: link
-    targets: [CraftAction]
-  - name: WVR
-    type: link
-    targets: [CraftAction]
-  - name: ALC
-    type: link
-    targets: [CraftAction]
-  - name: CUL
-    type: link
-    targets: [CraftAction]
-  - name: AnimationStart
-    type: link
-    targets: [ActionTimeline]
-  - name: AnimationEnd
-    type: link
-    targets: [ActionTimeline]
+    targets:
+      - ActionTimeline
   - name: Icon
     type: icon
-  - name: RequiredStatus
+  - name: UseClassJob
     type: link
-    targets: [Status]
-  - name: ClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
-  - name: ClassJobLevel
-  - name: Cost
+    targets:
+      - ClassJob
+  - name: Lv
+  - name: CostCP
   - name: ClassJob
     type: link
-    targets: [ClassJob]
-  - name: Specialist
+    targets:
+      - ClassJob

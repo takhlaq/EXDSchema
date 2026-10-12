@@ -1,6 +1,0 @@
-name: IKDPlayerMissionCondition
-displayField: MissionText
-fields:
-  - name: MissionText
-  - name: Count
-    comment: How many to actually catch

@@ -2,15 +2,16 @@ name: CompleteJournal
 displayField: Name
 fields:
   - name: Name
-  - name: Unknown0
-  - name: Unknown1
+  - name: Id
+  - name: Separate
   - name: Icon
     type: icon
-  - name: Cutscene
+  - name: CutScene
     type: array
     count: 24
     fields:
       - type: link
-        targets: [Cutscene]
-  - name: RequiredLevel
-  - name: Unknown2
+        targets:
+          - Cutscene
+  - name: Level
+  - name: LevelOffset

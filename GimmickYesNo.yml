@@ -1,6 +1,6 @@
 name: GimmickYesNo
-displayField: Message
+displayField: Text1
 fields:
-  - name: Message
-  - name: YesButton
-  - name: NoButton
+  - name: Text1
+  - name: Text2
+  - name: Text3

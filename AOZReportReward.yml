@@ -1,8 +1,0 @@
-name: AOZReportReward
-fields:
-  - name: FirstGilReward
-  - name: GeneralGilReward
-  - name: FirstAlliedSealsReward
-  - name: FirstTomestonesReward
-  - name: GeneralAlliedSealsReward
-  - name: GeneralTomestonesReward

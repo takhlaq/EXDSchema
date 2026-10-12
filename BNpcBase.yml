@@ -1,45 +1,37 @@
 name: BNpcBase
 fields:
   - name: Scale
-  - name: Unknown11
-  - name: ArrayEventHandler
+  - name: EventHandler
+  - name: NormalAI
     type: link
-    targets: [ArrayEventHandler]
-  - name: Behavior
+    targets:
+      - Behavior
+  - name: Model
     type: link
-    targets: [Behavior]
-  - name: ModelChara
+    targets:
+      - ModelChara
+  - name: Customize
     type: link
-    targets: [ModelChara]
-  - name: BNpcCustomize
+    targets:
+      - BNpcCustomize
+  - name: Equipment
     type: link
-    targets: [BNpcCustomize]
-  - name: NpcEquip
-    type: link
-    targets: [NpcEquip]
-  - name: Special
-  - name: Unknown9
+    targets:
+      - NpcEquip
+  - name: SEPack
   - name: Battalion
     type: link
-    targets: [Battalion]
+    targets:
+      - Battalion
   - name: LinkRace
     type: link
-    targets: [LinkRace]
+    targets:
+      - LinkRace
   - name: Rank
-  - name: SEPack
-  - name: Unknown0
-  - name: BNpcParts
+  - name: Special
+  - name: Parts
     type: link
-    targets: [BNpcParts]
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown10
-  - name: Unknown4
-  - name: IsOmnidirectional
-  - name: Unknown6
+    targets:
+      - BNpcParts
   - name: IsTargetLine
   - name: IsDisplayLevel
-  - name: Unknown7
-  - name: Unknown_70
-  - name: Unknown8

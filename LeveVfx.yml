@@ -1,6 +1,6 @@
 name: LeveVfx
-displayField: Icon
+displayField: Path
 fields:
-  - name: Effect
+  - name: Path
   - name: Icon
     type: icon

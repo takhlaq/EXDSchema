@@ -1,25 +1,28 @@
 name: BuddyEquip
-displayField: Name
+displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Name
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: ModelTop
-  - name: ModelBody
-  - name: ModelLegs
-  - name: IconHead
-    type: icon
-  - name: IconBody
-    type: icon
-  - name: IconLegs
-    type: icon
+  - name: UIName
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: Model
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - ModelChara
+  - name: Icon
+    type: array
+    count: 3
+    fields:
+      - type: icon
   - name: GrandCompany
     type: link
-    targets: [GrandCompany]
-  - name: Order
+    targets:
+      - GrandCompany

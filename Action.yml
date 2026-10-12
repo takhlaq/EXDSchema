@@ -2,112 +2,94 @@ name: Action
 displayField: Name
 fields:
   - name: Name
-  - name: UnlockLink
-    type: link
-    targets: [ChocoboTaxiStand, CraftLeve, CustomTalk, DefaultTalk, FccShop, GCShop, GilShop, GuildleveAssignment, GuildOrderGuide, GuildOrderOfficer, Quest, SpecialShop, Story, SwitchTalk, TopicSelect, TripleTriad, Warp]
+  - name: Help
+  - name: Reward
   - name: Icon
     type: icon
-  - name: VFX
+  - name: CastTimeline
     type: link
-    targets: [ActionCastVFX]
-  - name: ActionTimelineHit
+    targets:
+      - ActionTimeline
+  - name: HitTimeline
     type: link
-    targets: [ActionTimeline]
-  - name: PrimaryCostValue
-  - name: SecondaryCostValue
+    targets:
+      - ActionTimeline
+  - name: CostValue
+  - name: CondArg
+  - name: ComboParent
     type: link
-    condition:
-      switch: SecondaryCostType
-      cases:
-        32: [Status]
-        35: [Status]
-        46: [Status]
-  - name: ActionCombo
+    targets:
+      - Action
+  - name: CastTime
+  - name: RecastTime
+  - name: ResetStatus
     type: link
-    targets: [Action]
-  - name: Cast100ms
-  - name: Recast100ms
-  - name: ActionProcStatus
+    targets:
+      - Status
+  - name: Timeline
     type: link
-    targets: [ActionProcStatus]
-  - name: StatusGainSelf
+    targets:
+      - ActionTimeline
+  - name: Category
     type: link
-    targets: [Status]
-  - name: Omen
+    targets:
+      - ActionCategory
+  - name: CastVFX
     type: link
-    targets: [Omen]
-  - name: OmenAlt
+    targets:
+      - VFX
+  - name: ArcherTimeline
     type: link
-    targets: [Omen]
-  - name: AnimationEnd
-    type: link
-    targets: [ActionTimeline]
-  - name: ActionCategory
-    type: link
-    targets: [ActionCategory]
-  - name: Unknown1
-  - name: AnimationStart
-    type: link
-    targets: [ActionCastTimeline]
-  - name: Unknown2
-  - name: BehaviourType
-  - name: ClassJobLevel
-  - name: CastType
+    targets:
+      - ActionTimeline
+  - name: Level
+  - name: EffectType
   - name: EffectRange
-  - name: XAxisModifier
-  - name: PrimaryCostType
-  - name: SecondaryCostType
-  - name: ExtraCastTime100ms
-  - name: CooldownGroup
-  - name: AdditionalCooldownGroup
-  - name: MaxCharges
-  - name: Aspect
-  - name: Unknown4
+  - name: EffectWidth
+  - name: CostType
+  - name: Cond
+  - name: RecastGroup
+  - name: Element
+  - name: Unknown1
   - name: ClassJobCategory
     type: link
-    targets: [ClassJobCategory]
-  - name: AutoAttackBehaviour
-    comment: 0 = no effect on auto attacks, 1 = typical cast (unsheathe weapon, but don't touch autos), 2 = typical weaponskill (unsheathe, start autos if action target is primary target), 3 = sleep-like effect (unsheathe, stop autos), 4 = typical point-blank aoe (unsheathe, start autos if primary target is within action range), 5 = ??? (doesn't touch weapon state), 6 = typical channeled action (unsheathe, stop autos, do not auto-face target), 7 = force sheathe and stop autos, 8 = ??? (unused)
-  - name: EquivalenceGroup
-    comment: set for eg crafting actions, when different jobs have different rows, but they need to be considered interchangeable
-  - name: Unknown_70
-  - name: ClassJob
+    targets:
+      - ClassJobCategory
+  - name: Init
+  - name: Omen
     type: link
-    targets: [ClassJob]
-  - name: Range
-  - name: DeadTargetBehaviour
-    comment: 0 = can not target dead, 1 = can only target dead players (+ some other conditions), 2 = ???
+    targets:
+      - Omen
+  - name: Learn
+  - name: UseClassJob
+    type: link
+    targets:
+      - ClassJob
+  - name: SelectRange
+  - name: SelectCorpse
   - name: AttackType
-    type: link
-    targets: [AttackType]
-  - name: Unknown8
-  - name: IsRoleAction
-  - name: Unknown28
-  - name: CanTargetSelf
-  - name: CanTargetParty
-  - name: CanTargetAlliance
-  - name: CanTargetHostile
-  - name: CanTargetAlly
-  - name: Unknown10
-  - name: TargetArea
-  - name: CanTargetOwnPet
-  - name: CanTargetPartyPet
-  - name: RequiresLineOfSight
-  - name: NeedToFaceTarget
-  - name: Unknown14
-  - name: PreservesCombo
-  - name: Unknown15
-  - name: AffectsPosition
-  - name: IsPvP
-  - name: Unknown16
-  - name: LogCastMessage
-  - name: Unknown18
-  - name: LogMissMessage
-  - name: LogActionMessage
-  - name: Unknown21
-  - name: Unknown22
-  - name: Unknown23
-  - name: CanUseWhileMounted
-  - name: Unknown25
-  - name: IsPlayerAction
-  - name: Unknown27
+  - name: SelectMyself
+  - name: SelectParty
+  - name: SelectAlliance
+  - name: SelectEnemy
+  - name: SelectOthers
+  - name: SelectENpc
+  - name: SelectGround
+  - name: SelectMyPet
+  - name: SelectPartyPet
+  - name: Lay
+  - name: CheckDir
+  - name: EffectEnemy
+  - name: ComboContinue
+  - name: Silence
+  - name: InvalidMove
+  - name: PvPOnly
+  - name: IsAvoid
+  - name: IsMove
+  - name: LogCast
+  - name: LogMiss
+  - name: LogExec
+  - name: ForceVFX
+  - name: HideCastBar
+  - name: IsTargetLine
+  - name: unknown

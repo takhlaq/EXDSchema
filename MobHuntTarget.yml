@@ -1,17 +1,20 @@
 name: MobHuntTarget
-displayField: Name
 fields:
+  - name: Monster
+    type: link
+    targets:
+      - BNpcName
+  - name: Fate
+    type: link
+    targets:
+      - Fate
   - name: Icon
     type: icon
-  - name: Name
+  - name: ZoneName
     type: link
-    targets: [BNpcName]
-  - name: FATE
+    targets:
+      - PlaceName
+  - name: AreaName
     type: link
-    targets: [Fate]
-  - name: Map
-    type: link
-    targets: [Map]
-  - name: PlaceName
-    type: link
-    targets: [PlaceName]
+    targets:
+      - PlaceName

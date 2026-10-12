@@ -1,8 +1,8 @@
 name: GatheringType
-displayField: Name
+displayField: Text
 fields:
-  - name: Name
-  - name: IconMain
+  - name: Text
+  - name: MapIcon
     type: icon
-  - name: IconOff
+  - name: RareMapIcon
     type: icon

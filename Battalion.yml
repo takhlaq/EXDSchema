@@ -1,6 +1,5 @@
 name: Battalion
 fields:
-  - name: IsEnemyTo
-    comment: Index is the other battalion.
+  - name: Table
     type: array
-    count: 15
+    count: 12

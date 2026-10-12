@@ -1,22 +1,24 @@
 name: GrandCompanyRank
 fields:
-  - name: MaxSeals
-  - name: RequiredSeals
-  - name: IconMaelstrom
+  - name: CSMax
+  - name: NextCS
+  - name: IconOfLimsa
+  - name: IconOfGridania
     type: icon
-  - name: IconSerpents
+  - name: IconOfUldah
     type: icon
-  - name: IconFlames
-    type: icon
-  - name: QuestMaelstrom
+  - name: RankUpQuestOfLimsa
     type: link
-    targets: [Quest]
-  - name: QuestSerpents
+    targets:
+      - Quest
+  - name: RankUpQuestOfGridania
     type: link
-    targets: [Quest]
-  - name: QuestFlames
+    targets:
+      - Quest
+  - name: RankUpQuestOfUldah
     type: link
-    targets: [Quest]
-  - name: Tier
-  - name: Order
-  - name: RequiredHuntingLogRank
+    targets:
+      - Quest
+  - name: RankCategory
+  - name: LinearRank
+  - name: RankOfMonsterNoteCondition

@@ -2,13 +2,14 @@ name: LeveRewardItemGroup
 fields:
   - name: Item
     type: array
-    count: 9
+    count: 8
     fields:
       - type: link
-        targets: [Item]
-  - name: Count
+        targets:
+          - Item
+  - name: Stack
     type: array
-    count: 9
-  - name: IsHQ
+    count: 8
+  - name: HQ
     type: array
-    count: 9
+    count: 8

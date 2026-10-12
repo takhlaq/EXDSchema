@@ -1,5 +1,0 @@
-name: PlayerSearchLocation
-displayField: Name
-fields:
-  - name: Name
-  - name: SortKey

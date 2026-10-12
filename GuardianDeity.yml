@@ -2,6 +2,6 @@ name: GuardianDeity
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Icon
     type: icon

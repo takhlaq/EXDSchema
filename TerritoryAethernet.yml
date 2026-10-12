@@ -1,5 +1,0 @@
-name: TerritoryAethernet
-fields:
-  - name: TerritoryType
-    type: link
-    targets: [TerritoryType]

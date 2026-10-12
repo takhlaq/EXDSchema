@@ -1,11 +1,12 @@
 name: LeveRewardItem
 fields:
-  - name: LeveRewardItemGroup
+  - name: ItemGroup
     type: array
     count: 8
     fields:
       - type: link
-        targets: [LeveRewardItemGroup]
-  - name: ProbabilityPercent
+        targets:
+          - LeveRewardItemGroup
+  - name: ItemGroupRate
     type: array
     count: 8

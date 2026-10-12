@@ -1,7 +1,0 @@
-name: HWDSharedGroup
-displayField: LGBSharedGroup
-fields:
-  - name: LGBSharedGroup
-  - name: Param
-    type: link
-    targets: [HWDSharedGroupControlParam]

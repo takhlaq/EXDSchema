@@ -1,6 +1,6 @@
-name: EventItemTimeline
-displayField: ActionTimeline
+name: EventItemTimeLine
 fields:
-  - name: ActionTimeline
+  - name: Timeline
     type: link
-    targets: [ActionTimeline]
+    targets:
+      - ActionTimeline

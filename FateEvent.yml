@@ -1,6 +1,7 @@
 name: FateEvent
+displayField: MessageText
 fields:
-  - name: EventParameters
+  - name: Param
     type: array
     count: 8
     fields:
@@ -11,6 +12,6 @@ fields:
       - name: Turn
       - name: WidgetType
       - name: IsAutoShake
-  - name: Text
+  - name: MessageText
     type: array
     count: 8

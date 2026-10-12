@@ -1,9 +1,0 @@
-name: WKSAetheryte
-displayField: Name
-fields:
-  - name: Name
-    type: link
-    targets: [PlaceName]
-  - name: ObjectGroup
-    type: link
-    targets: [WKSAetheryteObjectGroup]

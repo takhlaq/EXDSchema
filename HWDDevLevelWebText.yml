@@ -1,5 +1,0 @@
-name: HWDDevLevelWebText
-displayField: Text
-fields:
-  - name: Text
-  - name: InProgressText

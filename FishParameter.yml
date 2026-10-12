@@ -1,27 +1,18 @@
 name: FishParameter
-displayField: Item
+displayField: NoteHelp
 fields:
-  - name: Text
-  - name: Unknown_70_1
-  - name: Unknown_70_2
-  - name: Unknown_70_3
-  - name: AchievementCredit
-  - name: Item
+  - name: NoteHelp
+  - name: ItemId
     type: link
-    targets: [EventItem, Item]
-  - name: GatheringItemLevel
+    targets:
+      - Item
+  - name: Territory
     type: link
-    targets: [GatheringItemLevelConvertTable]
-  - name: Unknown1
-  - name: FishingSpot
+    targets:
+      - TerritoryType
+  - name: Level
+  - name: RecordType
     type: link
-    targets: [FishingSpot]
-  - name: GatheringSubCategory
-    type: link
-    targets: [GatheringSubCategory]
-  - name: OceanStars
-  - name: FishingRecordType
-    type: link
-    targets: [FishingRecordType]
-  - name: IsHidden
-  - name: IsInLog
+    targets:
+      - FishingRecordType
+  - name: IsFishPrint

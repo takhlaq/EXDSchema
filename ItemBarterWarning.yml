@@ -1,5 +1,0 @@
-name: ItemBarterWarning
-fields:
-  - name: Achievement
-    type: link
-    targets: [Achievement]

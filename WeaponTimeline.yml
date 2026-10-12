@@ -1,6 +1,8 @@
 name: WeaponTimeline
+displayField: File
 fields:
   - name: File
   - name: NextWeaponTimeline
-  - name: Unknown0
-  - name: Unknown1
+    type: link
+    targets:
+      - WeaponTimeline

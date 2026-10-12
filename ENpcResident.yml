@@ -4,11 +4,10 @@ fields:
   - name: Singular
   - name: Plural
   - name: Title
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: Map
-  - name: Unknown1
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: PopType

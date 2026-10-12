@@ -1,15 +1,15 @@
 name: EmoteMode
-displayField: StartEmote
 fields:
   - name: StartEmote
     type: link
-    targets: [Emote]
+    targets:
+      - Emote
   - name: EndEmote
     type: link
-    targets: [Emote]
+    targets:
+      - Emote
   - name: ConditionMode
   - name: Move
   - name: Camera
   - name: EndOnRotate
   - name: EndOnEmote
-  - name: Unknown0

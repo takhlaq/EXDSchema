@@ -1,4 +1,4 @@
 name: LeveString
-displayField: Objective
+displayField: Name
 fields:
-  - name: Objective
+  - name: Name

@@ -1,11 +1,13 @@
 name: ChocoboTaxi
-displayField: Location
 fields:
-  - name: Location
+  - name: Terminus
     type: link
-    targets: [ChocoboTaxiStand]
+    targets:
+      - ChocoboTaxiStand
+  - name: Territory
+    type: link
+    targets:
+      - TerritoryType
+  - name: Path
   - name: Fare
-  - name: Unknown0
   - name: TimeRequired
-    comment: "In minutes."
-  - name: Unknown1

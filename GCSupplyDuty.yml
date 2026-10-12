@@ -1,15 +1,68 @@
 name: GCSupplyDuty
 fields:
-  - name: SupplyData
+  - name: WoodWorkerItem_wdk
     type: array
-    count: 11
-    fields:
-      - name: Item
-        type: array
-        count: 3
-        fields:
-          - type: link
-            targets: [Item]
-      - name: ItemCount
-        type: array
-        count: 3
+    count: 3
+  - name: WoodWorkerStack_wdk
+    type: array
+    count: 3
+  - name: CulinarianItem_cul
+    type: array
+    count: 3
+  - name: CulinarianStack_cul
+    type: array
+    count: 3
+  - name: AlchemistItem_alc
+    type: array
+    count: 3
+  - name: AlchemistStack_alc
+    type: array
+    count: 3
+  - name: ArmourerItem_arm
+    type: array
+    count: 3
+  - name: ArmourerStack_arm
+    type: array
+    count: 3
+  - name: TannerItem_tan
+    type: array
+    count: 3
+  - name: TannerStack_tan
+    type: array
+    count: 3
+  - name: GoldSmithItem_gld
+    type: array
+    count: 3
+  - name: GoldSmithStack_gld
+    type: array
+    count: 3
+  - name: WeaverItem_wvr
+    type: array
+    count: 3
+  - name: WeaverStack_wvr
+    type: array
+    count: 3
+  - name: BlackSmithItem_bsm
+    type: array
+    count: 3
+  - name: BlackSmithStack_bsm
+    type: array
+    count: 3
+  - name: MinerItem_min
+    type: array
+    count: 3
+  - name: MinerStack_min
+    type: array
+    count: 3
+  - name: HarvesterItem_hrv
+    type: array
+    count: 3
+  - name: HarvesterStack_hrv
+    type: array
+    count: 3
+  - name: FishermanItem_fsh
+    type: array
+    count: 3
+  - name: FishermanStack_fsh
+    type: array
+    count: 3

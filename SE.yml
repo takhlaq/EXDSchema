@@ -1,3 +1,4 @@
 name: SE
+displayField: Path
 fields:
-  - name: Unknown0
+  - name: Path

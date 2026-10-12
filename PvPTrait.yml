@@ -1,11 +1,9 @@
 name: PvPTrait
 fields:
-  - name: Trait1
-    type: link
-    targets: [Trait]
-  - name: Trait2
-    type: link
-    targets: [Trait]
-  - name: Trait3
-    type: link
-    targets: [Trait]
+  - name: Trait
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - Trait

@@ -1,12 +1,15 @@
 name: GatheringPointBase
 fields:
-  - name: GatheringType
+  - name: Type
     type: link
-    targets: [GatheringType]
-  - name: Item
+    targets:
+      - GatheringType
+  - name: GatheringItemId
     type: array
     count: 8
     fields:
       - type: link
-        targets: [GatheringItem, SpearfishingItem]
-  - name: GatheringLevel
+        targets:
+          - GatheringItem
+  - name: Lv
+  - name: EffectId

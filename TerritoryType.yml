@@ -2,86 +2,63 @@ name: TerritoryType
 displayField: Name
 fields:
   - name: Name
-  - name: Bg
-  - name: ArrayEventHandler
-    type: link
-    targets: [ArrayEventHandler]
-  - name: PlaceNameRegionIcon
+  - name: LVB
+  - name: EventHandler
+  - name: RegionIcon
     type: icon
-  - name: PlaceNameIcon
+  - name: AreaIcon
     type: icon
   - name: Aetheryte
     type: link
-    targets: [Aetheryte]
+    targets:
+      - Aetheryte
   - name: FixedTime
-  - name: PlaceNameRegion
+  - name: Region
     type: link
-    targets: [PlaceName]
-  - name: PlaceNameZone
+    targets:
+      - PlaceName
+  - name: SubRegion
     type: link
-    targets: [PlaceName]
-  - name: PlaceName
+    targets:
+      - PlaceName
+  - name: Area
     type: link
-    targets: [PlaceName]
+    targets:
+      - PlaceName
   - name: Map
     type: link
-    targets: [Map]
-  - name: ContentFinderCondition
-    type: link
-    targets: [ContentFinderCondition]
+    targets:
+      - Map
+  - name: Unknown4
   - name: BGM
     type: link
-    targets: [BGM, BGMSituation]
+    targets:
+      - BGM
   - name: QuestBattle
     type: link
-    targets: [QuestBattle]
-  - name: Resident
-  - name: NotoriousMonsterTerritory
-    type: link
-    targets: [NotoriousMonsterTerritory]
+    targets:
+      - QuestBattle
   - name: BattalionMode
-  - name: LoadingImage
-    type: link
-    targets: [LoadingImage]
   - name: ExclusiveType
-  - name: TerritoryIntendedUse
+  - name: IntendedUse
     type: link
-    targets: [TerritoryIntendedUse]
+    targets:
+      - TerritoryIntendedUse
   - name: WeatherRate
     type: link
-    targets: [WeatherRate]
+    targets:
+      - WeatherRate
+  - name: Breath
+  - name: Resident
   - name: Unknown1
-  - name: ExVersion
-    type: link
-    targets: [ExVersion]
   - name: Unknown2
-  - name: ZoneSharedGroup
-    type: link
-    targets: [ZoneSharedGroup]
-  - name: AetherCurrentCompFlgSet
-    type: link
-    targets: [AetherCurrentCompFlgSet]
-  - name: MountSpeed
-    type: link
-    targets: [MountSpeed]
-  - name: IndividualWeather
-    type: link
-    targets: [IndividualWeather]
+  - name: Unknown3
+  - name: TreasureObtainedFlag
   - name: AchievementIndex
-  - name: Unknown6
-  - name: Unknown7
-  - name: PCSearch
-  - name: Stealth
+  - name: IsPvPAction
   - name: Mount
-  - name: Unknown8
-  - name: IsPvpZone
-  - name: Unknown9
-  - name: IsInUse
-  - name: Unknown11
-  - name: Unknown12
-  - name: Unknown13
-  - name: Unknown14
-  - name: Unknown15
-  - name: Unknown16
-  - name: Unknown17
-  - name: Unknown18
+    type: link
+    targets:
+      - Mount
+  - name: Stealth
+  - name: PCSearch

@@ -1,9 +1,5 @@
 name: CompleteJournalCategory
 fields:
-  - name: FirstQuest
-    type: link
-    targets: [CompleteJournal]
-  - name: LastQuest
-    type: link
-    targets: [CompleteJournal]
-  - name: Unknown0
+  - name: Begin
+  - name: End
+  - name: SeparateType

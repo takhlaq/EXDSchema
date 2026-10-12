@@ -3,11 +3,5 @@ displayField: Name
 fields:
   - name: Name
   - name: Icon
-    type: icon
-  - name: TextIcon
-    type: link
-    targets: [Addon]
-  - name: Priority
-  - name: Unknown1
+  - name: ListOrder
   - name: List
-  - name: Unknown2

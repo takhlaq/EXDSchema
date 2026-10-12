@@ -1,24 +1,29 @@
 name: GatheringPoint
 fields:
-  - name: GatheringPointBase
+  - name: BaseId
     type: link
-    targets: [GatheringPointBase]
-  - name: GatheringPointBonus
-    type: array
-    count: 2
-    fields:
-      - type: link
-        targets: [GatheringPointBonus]
-  - name: TerritoryType
+    targets:
+      - GatheringPointBase
+  - name: BonusCond
     type: link
-    targets: [TerritoryType]
-  - name: PlaceName
+    targets:
+      - GatheringCondition
+  - name: BonusType
     type: link
-    targets: [PlaceName]
-  - name: GatheringSubCategory
+    targets:
+      - GatheringPointBonusType
+  - name: AreaId
     type: link
-    targets: [GatheringSubCategory]
+    targets:
+      - TerritoryType
+  - name: BonusVal
+  - name: BonusPoint
+  - name: PlaceNameId
+    type: link
+    targets:
+      - PlaceName
   - name: Type
-  - name: Unknown0
+    type: link
+    targets:
+      - GatheringType
   - name: Count
-  - name: Unknown1

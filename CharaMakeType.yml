@@ -1,68 +1,49 @@
 name: CharaMakeType
 fields:
-  - name: CharaMakeStruct
+  - name: Looks
     type: array
     count: 28
     fields:
       - name: Menu
-        type: link
-        targets: [Lobby]
       - name: SubMenuMask
       - name: Customize
       - name: SubMenuParam
         type: array
-        count: 106
+        count: 28
+      - name: SubMenuGraphic
+        type: array
+        count: 28
       - name: InitVal
       - name: SubMenuType
       - name: SubMenuNum
       - name: LookAt
-      - name: SubMenuGraphic
-        type: array
-        count: 10
-  - name: VoiceStruct
+  - name: VoiceSEPackId
     type: array
     count: 12
-  - name: FacialFeatureOption
+  - name: FaceOption
     type: array
-    count: 8
+    count: 6
     fields:
-      # TODO: Fix double nested array generation
-      - name: Option1
-        type: icon
-      - name: Option2
-        type: icon
-      - name: Option3
-        type: icon
-      - name: Option4
-        type: icon
-      - name: Option5
-        type: icon
-      - name: Option6
-        type: icon
-      - name: Option7
-        type: icon
-  - name: Equipment
+      - name: Option
+        type: array
+        count: 7
+  - name: Equip
     type: array
     count: 3
     fields:
       - name: Helmet
-        type: modelId
       - name: Top
-        type: modelId
-      - name: Gloves
-        type: modelId
-      - name: Legs
-        type: modelId
+      - name: Glove
+      - name: Down
       - name: Shoes
-        type: modelId
       - name: Weapon
-        type: modelId
       - name: SubWeapon
-        type: modelId
   - name: Race
     type: link
-    targets: [Race]
+    targets:
+      - Race
   - name: Tribe
     type: link
-    targets: [Tribe]
+    targets:
+      - Tribe
   - name: Gender

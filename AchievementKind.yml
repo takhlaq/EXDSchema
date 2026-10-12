@@ -2,4 +2,3 @@ name: AchievementKind
 displayField: Name
 fields:
   - name: Name
-  - name: Order

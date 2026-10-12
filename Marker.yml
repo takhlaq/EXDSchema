@@ -1,6 +1,6 @@
 name: Marker
+displayField: Name
 fields:
   - name: Name
   - name: Icon
     type: icon
-  - name: SortOrder

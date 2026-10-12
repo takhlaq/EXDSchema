@@ -2,61 +2,26 @@ name: Achievement
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Item
     type: link
-    targets: [Item]
-  - name: Icon
-    type: icon
-  - name: Key
-    type: link
-    condition:
-      switch: Type
-      cases:
-        2: [Achievement]
-        3: [ClassJob]
-        6: [Quest]
-        7: [ClassJob]
-        8: [Map]
-        9: [Quest]
-        11: [GrandCompany]
-        14: [InstanceContent]
-        15: [BeastTribe]
-        18: [GrandCompany]
-        20: [AetherCurrentCompFlgSet]
-        24: [Quest]
-  - name: Data
+    targets:
+      - Item
+  - name: ConditionArg
     type: array
-    count: 8
-    fields:
-      - type: link
-        condition:
-          switch: Type
-          cases:
-            2: [Achievement]
-            6: [Quest]
-            9: [Quest]
-            15: [BeastReputationRank]
-            20: [AetherCurrentCompFlgSet]
-            24: [ClassJob, Quest]
+    count: 9
   - name: Title
     type: link
-    targets: [Title]
-  - name: Order
-  - name: AchievementCategory
+    targets:
+      - Title
+  - name: Icon
+    type: icon
+  - name: Priority
+  - name: Category
     type: link
-    targets: [AchievementCategory]
-  - name: AchievementTarget
-    type: link
-    targets: [AchievementTarget]
-  - name: Unknown0
-  - name: Points
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Type
-  - name: Unknown5
-  - name: AchievementHideCondition
-    type: link
-    targets: [AchievementHideCondition]
+    targets:
+      - AchievementCategory
+  - name: Point
+  - name: UnknownConditional
+  - name: ConditionType
+  - name: Detail

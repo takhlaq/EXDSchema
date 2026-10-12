@@ -2,48 +2,64 @@ name: Emote
 displayField: Name
 fields:
   - name: Name
-  - name: Icon
-    type: icon
-  - name: UnlockLink
+  - name: Unknown
   - name: TextCommand
     type: link
-    targets: [TextCommand]
-  - name: ActionTimeline
-    type: array
-    count: 7
-    fields:
-      - type: link
-        targets: [ActionTimeline]
-    comment: |
-      0 = Standing
-      1 = Start animation
-      2 = Ground sit
-      3 = Chair sit
-      4 = Mounted / Swimming / Diving
-      5 = Dozing
-      6 = Unused
-  - name: Order
-  - name: LogMessageTargeted
+    targets:
+      - TextCommand
+  - name: TimelineID
     type: link
-    targets: [LogMessage]
-  - name: LogMessageUntargeted
+    targets:
+      - ActionTimeline
+  - name: TimelineID_Begin
     type: link
-    targets: [LogMessage]
-  - name: Patch
-  - name: EmoteCategory
+    targets:
+      - ActionTimeline
+  - name: TimelineID_End
     type: link
-    targets: [EmoteCategory]
-    comment: |
-      3 (Expressions) = Usable everywhere (other columns are overridden)
-  - name: EmoteMode
+    targets:
+      - ActionTimeline
+  - name: TimelineID_GroundSitting
     type: link
-    targets: [EmoteMode]
-  - name: UsableWhenMounted
-  - name: UsableWhenSwimming
-  - name: UsableWhenDiving
-  - name: DontSetEmoteMode
-  - name: Unknown5
-    comment: Maybe controls whether or not the emote can be synced in GPose?!
-  - name: UsableWhenFishing
-  - name: DrawsWeapon
-  - name: SheathesWeapon
+    targets:
+      - ActionTimeline
+  - name: TimelineID_ChairSitting
+    type: link
+    targets:
+      - ActionTimeline
+  - name: TimelineID_Mounting
+    type: link
+    targets:
+      - ActionTimeline
+  - name: TimelineID_Lying
+    type: link
+    targets:
+      - ActionTimeline
+  - name: Unknown1A
+  - name: Icon
+    type: icon
+  - name: Log
+    type: link
+    targets:
+      - LogMessage
+  - name: LogSelf
+    type: link
+    targets:
+      - LogMessage
+  - name: Category
+    type: link
+    targets:
+      - EmoteCategory
+  - name: Mode
+    type: link
+    targets:
+      - EmoteMode
+  - name: Reward
+  - name: IsLoopEmote
+  - name: IsPoseEmote
+  - name: IsAvailableWhenFishing
+  - name: IsAvailableWhenDrawn
+  - name: IsAvailableWhenNotDrawn
+  - name: IsFacial
+  - name: IsRotate
+  - name: IsEndEmoteMode

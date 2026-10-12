@@ -1,5 +1,0 @@
-name: XBMContentRandomStageEvent
-fields:
-- name: RandomStageEvent
-  type: link
-  targets: [XBMRandomStageEvent]

@@ -2,47 +2,26 @@ name: Status
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Icon
     type: icon
-  - name: ParamModifier
-  - name: VFX
-    type: link
-    targets: [StatusLoopVFX]
   - name: Log
-  - name: ExclusionGroup
-  - name: MaxStacks
-  - name: ClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
-  - name: StatusCategory
+  - name: Stack
+  - name: Category
   - name: HitEffect
-    type: link
-    targets: [StatusHitEffect]
+  - name: LoopEffect
   - name: PartyListPriority
-  - name: CanIncreaseRewards
-  - name: ParamEffect
+  - name: SystemParamEffect
   - name: TargetType
-  - name: Flags
-    comment: actually an index of the flag
-  - name: Flag2
-  - name: Unknown_70_1
-  - name: Unknown2
-  - name: LockMovement
-  - name: Unknown3
-  - name: LockActions
-  - name: LockControl
-  - name: Transfiguration
-  - name: IsGaze
-  - name: CanDispel
-  - name: Unknown8
-  - name: InflictedByActor
-  - name: IsPermanent
-  - name: NoLogVfx
-  - name: Unknown5
-  - name: CanStatusOff
-  - name: IsFcBuff
-  - name: Invisibility
-  - name: Unknown6
-  - name: Unknown_70_2
-  - name: Unknown7
+  - name: Flag
+  - name: InconvenienceClear
+  - name: HideTimer
+  - name: Forever
+  - name: NotLookAt
+  - name: ShapeShift
+  - name: NotControl
+  - name: NotAction
+  - name: NotMove
+  - name: CanOff
+  - name: SemiTransparent
+  - name: FcAction

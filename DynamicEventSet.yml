@@ -1,5 +1,0 @@
-name: DynamicEventSet
-fields:
-  - name: DynamicEvent
-    type: link
-    targets: [DynamicEvent]

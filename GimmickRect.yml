@@ -1,10 +1,10 @@
 name: GimmickRect
 fields:
-  - name: LayoutID
-    comment: The EventRange to associate with.
-  - name: Params
-    type: array
-    count: 8
+  - name: LayoutId
+    type: link
+    targets:
+      - Level
+  - name: Param0
+  - name: Param1
   - name: TriggerIn
-    comment: 8 = Jump
   - name: TriggerOut

@@ -1,19 +1,16 @@
 name: DefaultTalk
+displayField: Talk
 fields:
-  - name: DefaultTalkParams
+  - name: Param
     type: array
     count: 3
     fields:
-      - name: ActionTimelinePose
-        type: link
-        targets: [ActionTimeline]
-      - name: Unknown0
-      - name: Unknown1
-      - name: Unknown2
-      - name: Unknown3
-      - name: Unknown4
-  - name: Text
+      - name: Gesture
+      - name: Facial
+      - name: Turn
+      - name: LipSync
+      - name: Shape
+      - name: IsAutoShake
+  - name: Talk
     type: array
     count: 3
-  - name: Unknown0
-  - name: Unknown1

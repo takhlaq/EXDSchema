@@ -1,21 +1,34 @@
 name: GuildOrder
+displayField: OperationText
 fields:
-  - name: Objective
-  - name: Description1
-  - name: Description2
-  - name: Description3
-  - name: CompletionBonusExp
+  - name: OperationText
+  - name: OrderText
+    type: array
+    count: 2
+  - name: SummaryText
   - name: RewardExp
-  - name: CompletionBonusGil
+    type: array
+    count: 2
   - name: RewardGil
-  - name: Unknown0
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
-  - name: Unknown6
-  - name: Unknown7
-  - name: ENpcName
+    type: array
+    count: 2
+  - name: RewardSeal
+    type: array
+    count: 2
+  - name: RewardItem
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item
+  - name: RewardStack
+    type: array
+    count: 2
+  - name: RewardHQ
+    type: array
+    count: 2
+  - name: OfficerBase
     type: link
-    targets: [ENpcResident]
+    targets:
+      - GuildOrderOfficer

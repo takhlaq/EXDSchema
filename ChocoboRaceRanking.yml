@@ -1,5 +1,0 @@
-name: ChocoboRaceRanking
-fields:
-  - name: BGM
-    type: link
-    targets: [BGM]

@@ -1,4 +1,4 @@
 name: VFX
-displayField: Location
+displayField: Path
 fields:
-  - name: Location
+  - name: Path

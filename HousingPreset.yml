@@ -1,56 +1,39 @@
 name: HousingPreset
+displayField: NameSingular
 fields:
-  - name: Singular
-  - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: ExteriorRoof
+  - name: NameSingular
+  - name: NamePlural
+  - name: NameSGG
+  - name: NamePLG
+  - name: NameVOW
+  - name: NameCNT
+  - name: NameGEN
+  - name: NameDEF
+  - name: Roof
     type: link
-    targets: [Item]
-  - name: ExteriorWall
+    targets:
+      - HousingExterior
+  - name: Wall
     type: link
-    targets: [Item]
-  - name: ExteriorWindow
+    targets:
+      - HousingExterior
+  - name: Window
     type: link
-    targets: [Item]
-  - name: ExteriorDoor
+    targets:
+      - HousingExterior
+  - name: Door
     type: link
-    targets: [Item]
-  - name: InteriorWall
+    targets:
+      - HousingExterior
+  - name: Interior
+    type: array
+    count: 10
+    fields:
+      - type: link
+        targets:
+          - HousingInterior
+  - name: Region
     type: link
-    targets: [Item]
-  - name: InteriorFlooring
-    type: link
-    targets: [Item]
-  - name: InteriorLighting
-    type: link
-    targets: [Item]
-  - name: OtherFloorWall
-    type: link
-    targets: [Item]
-  - name: OtherFloorFlooring
-    type: link
-    targets: [Item]
-  - name: OtherFloorLighting
-    type: link
-    targets: [Item]
-  - name: BasementWall
-    type: link
-    targets: [Item]
-  - name: BasementFlooring
-    type: link
-    targets: [Item]
-  - name: BasementLighting
-    type: link
-    targets: [Item]
-  - name: MansionLighting
-    type: link
-    targets: [Item]
-  - name: PlaceName
-    type: link
-    targets: [PlaceName]
-  - name: HousingSize
+    targets:
+      - PlaceName
+  - name: Size

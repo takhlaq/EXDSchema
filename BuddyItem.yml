@@ -2,8 +2,11 @@ name: BuddyItem
 fields:
   - name: Item
     type: link
-    targets: [Item]
+    targets:
+      - Item
   - name: Status
+    type: link
+    targets:
+      - Status
   - name: UseField
   - name: UseTraining
-  - name: Unknown0

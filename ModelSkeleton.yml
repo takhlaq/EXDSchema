@@ -3,17 +3,14 @@ fields:
   - name: Radius
   - name: Height
   - name: VFXScale
+  - name: FootScale
+  - name: WalkSpeed
+  - name: RunSpeed
   - name: FloatHeight
+    type: array
+    count: 2
   - name: FloatDown
-  - name: Unknown0
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
-  - name: Unknown6
-  - name: Unknown7
   - name: FloatUp
-  - name: Unknown8
-  - name: LoopFlySE
   - name: MotionBlendType
+  - name: AutoAttackType
+  - name: LoopFlySE

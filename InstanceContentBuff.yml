@@ -1,4 +1,4 @@
 name: InstanceContentBuff
 fields:
-  - name: EchoStart
-  - name: EchoDeath
+  - name: ParamBase
+  - name: ParamAdd

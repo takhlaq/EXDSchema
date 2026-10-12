@@ -1,9 +1,0 @@
-name: EventItemCategory
-fields:
-  - name: Text
-  - name: ReceiveLogMessage
-    type: link
-    targets: [LogMessage]
-  - name: DiscardLogMessage
-    type: link
-    targets: [LogMessage]

@@ -1,5 +1,0 @@
-name: QuestBattleResident
-fields:
-  - name: SoloDuty
-    type: link
-    targets: [ContentFinderCondition]

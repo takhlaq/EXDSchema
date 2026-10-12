@@ -1,4 +1,0 @@
-name: WKSItemSubCategory
-fields:
-  - name: Name
-  - name: MenuOrder

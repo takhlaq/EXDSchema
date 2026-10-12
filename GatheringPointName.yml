@@ -3,9 +3,9 @@ displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF

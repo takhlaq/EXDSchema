@@ -1,7 +1,0 @@
-name: WKSMissionMapMarker
-fields:
-  - name: Icon
-    type: icon
-  - name: X
-  - name: Y
-  - name: Radius

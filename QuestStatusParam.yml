@@ -1,7 +1,0 @@
-name: QuestStatusParam
-fields:
-  - name: Status
-    type: link
-    targets: [Status]
-  - name: StatusParam1
-  - name: StatusParam2

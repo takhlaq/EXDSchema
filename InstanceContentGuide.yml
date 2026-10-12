@@ -1,6 +1,7 @@
 name: InstanceContentGuide
 fields:
-  - name: Instance
+  - name: InstanceContent
     type: link
-    targets: [InstanceContent]
-  - name: Unknown0
+    targets:
+      - InstanceContent
+  - name: EventRange

@@ -2,19 +2,19 @@ name: Trait
 displayField: Name
 fields:
   - name: Name
-  - name: Quest
-    type: link
-    targets: [Quest]
+  - name: Help
   - name: Icon
     type: icon
-  - name: Value
+  - name: Reward
+  - name: ParamValue
   - name: ClassJob
     type: link
-    targets: [ClassJob]
-  - name: ClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
+    targets:
+      - ClassJob
   - name: Level
-  - name: Unknown2
-  - name: Unknown0
-  - name: Unknown1
+  - name: PvPSkillPoint
+  - name: UseClass
+    type: link
+    targets:
+      - ClassJob
+  - name: PvPOnly

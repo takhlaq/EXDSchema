@@ -1,6 +1,0 @@
-name: GFateRideShooting
-displayField: ContentEntry
-fields:
-  - name: ContentEntry
-    type: link
-    targets: [ContentEntry]

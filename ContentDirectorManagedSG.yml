@@ -1,5 +1,0 @@
-name: ContentDirectorManagedSG
-fields:
-  - name: LayoutId
-    comment: Refers to an SGB instance in the level.
-  - name: Unknown1

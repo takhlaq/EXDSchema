@@ -1,5 +1,0 @@
-name: XBMContentBattle
-fields:
-- name: BattleDetail
-  type: link
-  targets: [XBMBattleDetail]

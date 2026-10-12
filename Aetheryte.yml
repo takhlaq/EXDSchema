@@ -1,40 +1,41 @@
 name: Aetheryte
-displayField: PlaceName
+displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: Unknown1
-  - name: Level
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: EventHandler
+  - name: PopRange
     type: array
     count: 4
     fields:
       - type: link
-        targets: [Level]
-  - name: RequiredQuest
+        targets:
+          - Level
+  - name: TelepoName
     type: link
-    targets: [Quest]
-  - name: PlaceName
+    targets:
+      - PlaceName
+  - name: TransferName
     type: link
-    targets: [PlaceName]
-  - name: AethernetName
+    targets:
+      - PlaceName
+  - name: TerritoryType
     type: link
-    targets: [PlaceName]
-  - name: Territory
+    targets:
+      - TerritoryType
+  - name: TextIcon
+    type: icon
+  - name: CostPosX
+  - name: CostPosY
+  - name: Town
     type: link
-    targets: [TerritoryType]
-  - name: Map
-    type: link
-    targets: [Map]
-  - name: AetherstreamX
-  - name: AetherstreamY
-  - name: Unknown2
-  - name: AethernetGroup
-  - name: Order
-  - name: IsAetheryte
-  - name: Invisible
+    targets:
+      - Town
+  - name: SortKey
+  - name: Telepo

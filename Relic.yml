@@ -1,50 +1,31 @@
 name: Relic
-displayField: ItemAnimus
 fields:
-  - name: ItemAtma
+  - name: Item
     type: link
-    targets: [Item]
-  - name: ItemAnimus
+    targets:
+      - Item
+  - name: ExchangeItem
     type: link
-    targets: [Item]
+    targets:
+      - Item
   - name: Icon
     type: icon
-  - name: Materia0
-    type: link
-    targets: [Materia]
-  - name: Materia1
-    type: link
-    targets: [Materia]
-  - name: Materia2
-    type: link
-    targets: [Materia]
-  - name: Materia3
-    type: link
-    targets: [Materia]
-  - name: NoteMain0
-    type: link
-    targets: [RelicNote]
-  - name: NoteSub0
-    type: link
-    targets: [RelicNote]
-  - name: NoteSelection10
-    type: link
-    targets: [RelicNote]
-  - name: NoteMain1
-    type: link
-    targets: [RelicNote]
-  - name: NoteSub1
-    type: link
-    targets: [RelicNote]
-  - name: NoteSelection1
-    type: link
-    targets: [RelicNote]
-  - name: NoteMain2
-    type: link
-    targets: [RelicNote]
-  - name: NoteSub2
-    type: link
-    targets: [RelicNote]
-  - name: NoteSelection3
-    type: link
-    targets: [RelicNote]
+  - name: Materia
+    type: array
+    count: 4
+    fields:
+      - type: link
+        targets:
+          - Materia
+  - name: MainNote
+    type: array
+    count: 3
+  - name: SubNote
+    type: array
+    count: 3
+  - name: SelectionANote
+    type: array
+    count: 2
+  - name: SelectionBNote
+    type: array
+    count: 1

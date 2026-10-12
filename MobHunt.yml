@@ -1,0 +1,15 @@
+name: MobHunt
+fields:
+  - name: Target
+    type: array
+    count: 5
+    fields:
+      - type: link
+        targets:
+          - MobHuntTarget
+  - name: NeededKills
+    type: array
+    count: 5
+  - name: Rank
+    type: array
+    count: 5

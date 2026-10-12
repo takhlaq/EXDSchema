@@ -1,71 +1,61 @@
 name: Recipe
-displayField: ItemResult
 fields:
-  - name: RequiredQuality
-  - name: Quest
-    type: link
-    targets: [Quest]
-  - name: Number
   - name: CraftType
     type: link
-    targets: [CraftType]
-  - name: ItemResult
+    targets:
+      - CraftType
+  - name: CraftItemId
     type: link
-    targets: [Item]
-  - name: Ingredient
+    targets:
+      - Item
+  - name: MaterialItemId
     type: array
     count: 8
     fields:
       - type: link
-        targets: [Item]
-  - name: StatusRequired
+        targets:
+          - Item
+  - name: CrystalType
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - CraftCrystalType
+  - name: NeedStatus
     type: link
-    targets: [Status]
-  - name: ItemRequired
+    targets:
+      - Status
+  - name: NeedEquipItem
     type: link
-    targets: [Item]
-  - name: RecipeLevelTable
+    targets:
+      - Item
+  - name: Category
     type: link
-    targets: [RecipeLevelTable]
-  - name: MaxAdjustableJobLevel
+    targets:
+      - RecipeNotebookList
+  - name: WorkRate
+  - name: QualityRate
+  - name: MaterialPointRate
+  - name: NotebookIndex
+  - name: NeedCraftmanship
+  - name: NeedControl
+  - name: NeedSecretRecipeBook
     type: link
-    targets: [GathererCrafterLvAdjustTable]
-  - name: RecipeNotebookList
-    type: link
-    targets: [RecipeNotebookList]
-  - name: DisplayPriority
-  - name: DifficultyFactor
-  - name: QualityFactor
-  - name: DurabilityFactor
-  - name: RequiredCraftsmanship
-  - name: RequiredControl
-  - name: QuickSynthCraftsmanship
-  - name: QuickSynthControl
-  - name: SecretRecipeBook
-    type: link
-    targets: [SecretRecipeBook]
-  - name: CollectableMetadata
-    type: link
-    condition:
-      switch: CollectableMetadataKey
-      cases:
-        1: [CollectablesShopRefine]
-        2: [HWDCrafterSupply]
-        3: [SatisfactionSupply]
-        4: [SharlayanCraftWorksSupply]
-        6: [CollectablesRefine] # For Wachumeqimeqi (Banka) deliveries
-        7: [WKSMissionToDoEvalutionRefin] # Cosmic Exploration
-  - name: PatchNumber
-  - name: AmountResult
-  - name: AmountIngredient
+    targets:
+      - SecretRecipeBook
+  - name: Level
+  - name: CraftNum
+  - name: MaterialNum
     type: array
     count: 8
-  - name: MaterialQualityFactor
-  - name: CollectableMetadataKey
-  - name: IsSecondary
-  - name: CanQuickSynth
+  - name: CrystalNum
+    type: array
+    count: 2
+  - name: Element
+    type: link
+    targets:
+      - RecipeElement
   - name: CanHq
-  - name: ExpRewarded
-  - name: Unknown1
-  - name: IsSpecializationRequired
-  - name: IsExpert
+  - name: CanAutoCraft
+  - name: Sub

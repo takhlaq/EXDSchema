@@ -3,48 +3,42 @@ displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
+  - name: Help
+  - name: Expository
+  - name: Cry
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
   - name: Model
     type: link
-    targets: [ModelChara]
-  - name: Priority
-  - name: Enemy
+    targets:
+      - ModelChara
   - name: Icon
     type: icon
-  - name: Order
-  - name: HP
-  - name: SkillAngle
-  - name: Unknown1
+  - name: Enemy
+    type: link
+    targets:
+      - BNpcName
+  - name: Priority
   - name: Scale
-  - name: InactiveIdle0
-  - name: InactiveIdle1
+  - name: InactiveIdle
+    type: array
+    count: 2
   - name: InactiveBattle
   - name: InactiveWandering
-  - name: Behavior
+  - name: MoveType
     type: link
-    targets: [CompanionMove]
+    targets:
+      - CompanionMove
   - name: Special
-  - name: Unknown10
-  - name: Unknown11
   - name: WanderingWait
-  - name: Unknown2
-  - name: Cost
-  - name: Unknown3
-  - name: SkillCost
-  - name: Unknown4
-  - name: MinionRace
-    type: link
-    targets: [MinionRace]
-  - name: Unknown5
-  - name: Unknown6
-  - name: Unknown7
-  - name: Unknown8
-  - name: Unknown9
-  - name: Battle
+  - name: ChatGroup
   - name: Roulette
-  - name: IdleAnimation
+  - name: Battle
+  - name: LookAt
+  - name: Poke
+  - name: Stroke
+  - name: Clapping

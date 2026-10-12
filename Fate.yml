@@ -1,94 +1,49 @@
 name: Fate
-displayField: Name
+displayField: TitleText
 fields:
-  - name: Name
-  - name: Description
-  - name: Objective
-  - name: StatusText
-    type: array
-    count: 3
-  - name: ArrayEventHandler
+  - name: TitleText
+  - name: DescriptionText
+  - name: DescriptionText2
+  - name: TodoName1
+  - name: TodoName2
+  - name: TodoName3
+  - name: QuestResultListener
+  - name: TradeItemId
     type: link
-    targets: [ArrayEventHandler]
-  - name: Unknown1
-  - name: Unknown14
-  - name: ReqEventItem
-    type: link
-    targets: [EventItem]
-  - name: TurnInEventItem
-    type: link
-    targets: [EventItem]
-  - name: Unknown2
-    type: array
-    count: 3
-  - name: Unknown10
-  - name: Unknown11
-  - name: Unknown12
-  - name: ObjectiveIcon
-    type: array
-    count: 32
-    fields:
-      - name: LayoutId
-      - name: Icon
-        type: icon
-  - name: Location
-    comment: Instance ID of the EventRange where this spawns.
-  - name: EventItem
-    type: link
-    targets: [EventItem]
+    targets:
+      - Item
+  - name: GuardNpcLayoutId
+  - name: EventRange
   - name: Icon
     type: icon
-  - name: MapIcon
+  - name: IconSmall
     type: icon
-  - name: InactiveMapIcon
-    type: icon
-  - name: LGBGuardNPCLocation
-  - name: RequiredQuest
+  - name: BGM
     type: link
-    targets: [Quest]
-  - name: FATEChain
-  - name: RequiredQuest2
+    targets:
+      - BGM
+  - name: StarterTalkNpcLayoutId
+  - name: Achivement
     type: link
-    targets: [Quest]
-    comment: Used when Unknown6 is 3
-  - name: FateRuleEx
-    type: link
-    targets: [FateRuleEx]
-  - name: Music
-    type: link
-    targets: [BGM]
-  - name: ScreenImageAccept
-    type: link
-    targets: [ScreenImage]
-  - name: ScreenImageComplete
-    type: link
-    targets: [ScreenImage]
-  - name: ScreenImageFailed
-    type: link
-    targets: [ScreenImage]
-  - name: GivenStatus
-    type: link
-    targets: [Status]
-  - name: Unknown4
-  - name: OccupiedPermission
-    type: link
-    targets: [Permission]
-  - name: FateMode
-    type: link
-    targets: [FateMode]
-  - name: Rule
-  - name: ClassJobLevel
-  - name: ClassJobLevelMax
-  - name: StatusValue
+    targets:
+      - Achievement
+  - name: TodoValueType
     type: array
     count: 3
-  - name: Unknown6
-  - name: RequiredClassJobCategory
+  - name: Rule
+  - name: Level
+  - name: SyncLv
+  - name: AcceptScreenImage
     type: link
-    targets: [ClassJobCategory]
-  - name: SpecialFate
-  - name: Unknown8
-  - name: Unknown15
-  - name: AdventEvent
-  - name: MoonFaireEvent
-  - name: Unknown9
+    targets:
+      - ScreenImage
+  - name: CompleteScreenImage
+    type: link
+    targets:
+      - ScreenImage
+  - name: FailedScreenImage
+    type: link
+    targets:
+      - ScreenImage
+  - name: IsQuest
+  - name: Show2DMap

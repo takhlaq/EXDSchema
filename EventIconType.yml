@@ -1,11 +1,7 @@
 name: EventIconType
 fields:
-  - name: NpcIconAvailable
-    type: icon
-  - name: MapIconAvailable
-    type: icon
-  - name: NpcIconInvalid
-    type: icon
-  - name: MapIconInvalid
-    type: icon
-  - name: IconRange
+  - name: NpcAvailable
+  - name: MapAvailable
+  - name: NpcInvalid
+  - name: MapInvalid
+  - name: Num

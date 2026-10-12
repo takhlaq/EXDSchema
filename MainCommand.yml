@@ -2,12 +2,9 @@ name: MainCommand
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Icon
     type: icon
+  - name: ActionMenu
   - name: Category
-  - name: MainCommandCategory
-    type: link
-    targets: [MainCommandCategory]
-  - name: Unknown0
-  - name: SortID
+  - name: SortId

@@ -1,5 +1,0 @@
-name: MapType
-fields:
-  - name: ParentMapOverride
-    type: link
-    targets: [Map]

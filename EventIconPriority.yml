@@ -2,6 +2,6 @@ name: EventIconPriority
 fields:
   - name: Icon
     type: array
-    count: 29
+    count: 16
     fields:
       - type: icon

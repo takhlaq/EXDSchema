@@ -1,7 +1,7 @@
 name: GCSupplyDutyReward
 fields:
-  - name: ExperienceSupply
-  - name: ExperienceProvisioning
-  - name: SealsExpertDelivery
-  - name: SealsSupply
-  - name: SealsProvisioning
+  - name: ExpOfMunition
+  - name: ExpOfSupplies
+  - name: SealsOfBooty
+  - name: SealsOfMunition
+  - name: SealsOfSupplies

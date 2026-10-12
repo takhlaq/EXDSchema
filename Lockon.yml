@@ -1,4 +1,4 @@
 name: Lockon
+displayField: File
 fields:
-  - name: IconName
-  - name: Unknown1
+  - name: File

@@ -3,80 +3,69 @@ displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: WhistlePath
-  - name: Unknown2
-  - name: DismountSCDPath
-  - name: ModelChara
+  - name: Help
+  - name: Expository
+  - name: Cry
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: Slowdown
+  - name: MoveAccel_Run
+  - name: MoveAccel_Walk
+  - name: MoveSpeed_Run
+  - name: MoveSpeed_Walk
+  - name: MoveSpeed_RunLR
+  - name: MoveSpeed_WalkLR
+  - name: MoveSpeed_Back
+  - name: RotateSpeed_FFXIV
+  - name: RotateSpeed_WOW
+  - name: RotateSpeed_AutoRun
+  - name: RotateSpeed_LockOn
+  - name: Model
     type: link
-    targets: [ModelChara]
+    targets:
+      - ModelChara
   - name: EquipHead
+    type: link
+    targets:
+      - NpcEquip
   - name: EquipBody
+    type: link
+    targets:
+      - NpcEquip
   - name: EquipLeg
+    type: link
+    targets:
+      - NpcEquip
   - name: EquipFoot
-  - name: MoveControl
     type: link
-    targets: [MoveControl]
-  - name: RideBGM
+    targets:
+      - NpcEquip
+  - name: BGM
     type: link
-    targets: [BGM]
+    targets:
+      - BGM
   - name: Icon
     type: icon
-  - name: UIPriority
-  - name: MountAction
-    type: link
-    targets: [MountAction]
-  - name: GroundTiltParam
-    type: link
-    targets: [TiltParam]
-  - name: FlightSwimTiltParam
-    type: link
-    targets: [TiltParam]
-  - name: RiderGroundTiltParam
-    type: link
-    targets: [TiltParam]
-  - name: RiderFlightSwimTiltParam
-    type: link
-    targets: [TiltParam]
-  - name: Order
-  - name: FlyingCondition
-    type: link
-    targets: [MountFlyingCondition]
-  - name: FlyUpDownAngle
-  - name: Unknown6
-  - name: Unknown7
-  - name: FlyingMoveVfx
-    type: link
-    targets: [MoveVfx]
-  - name: GlideVFX
-    type: link
-    targets: [MoveVfx]
-  - name: MountCustomize
-    type: link
-    targets: [MountCustomize]
-  - name: ExitMoveDist
-  - name: ExitMoveSpeed
+  - name: Action
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Action
+  - name: unknown
+    type: array
+    count: 2
+  - name: unknown2
+    type: array
+    count: 6
   - name: RadiusRate
-  - name: BaseMotionSpeed_Run
-  - name: BaseMotionSpeed_Walk
-  - name: BaseMotionSpeed_Swim
-  - name: ExtraSeats
-  - name: Unknown10
-  - name: Unknown11
-  - name: Unknown12
-  - name: IsEmote
-  - name: Unknown20
-  - name: IsAirborne
-  - name: ExHotbarEnableConfig
-  - name: UseEP
-  - name: Unknown13
-  - name: IsImmobile
-  - name: Unknown14
-  - name: HideHeadgear
-  - name: OwnerGroundTiltEnable
-  - name: OwnerGroundFlySwimEnable
+  - name: unknown3
+    type: array
+    count: 3
+  - name: MountOrder
+  - name: unknown4

@@ -1,10 +1,8 @@
 name: MotionTimeline
+displayField: filename
 fields:
-  - name: Filename
+  - name: filename
   - name: BlendGroup
-  - name: Unknown_70_1
-  - name: Unknown_70_2
-  - name: IsLoop
-  - name: IsBlinkEnable
   - name: IsLipEnable
-  - name: Unknown0
+  - name: IsBlinkEnable
+  - name: IsLoop

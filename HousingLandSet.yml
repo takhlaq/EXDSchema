@@ -1,13 +1,24 @@
 name: HousingLandSet
 fields:
-  - name: LandSet
+  - name: Lands
     type: array
     count: 60
     fields:
-      - name: MapRange
-      - name: PlacardId
-      - name: RoomExit
-      - name: InitialPrice
-      - name: PlotSize
-  - name: MainApartment
-  - name: SubdivisionApartment
+      - name: LandRange
+        type: link
+        targets:
+          - Level
+      - name: SignboardEObj
+        type: link
+        targets:
+          - EObj
+      - name: StuckPopRange
+        type: link
+        targets:
+          - Level
+      - name: ExitPopRange
+        type: link
+        targets:
+          - Level
+      - name: InitPrice
+      - name: Size

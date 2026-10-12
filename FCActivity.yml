@@ -5,7 +5,9 @@ fields:
   - name: SelfKind
   - name: TargetKind
   - name: NumParam
-  - name: FCActivityCategory
+  - name: Category
     type: link
-    targets: [FCActivityCategory]
+    targets:
+      - FCActivityCategory
   - name: IconType
+    type: icon

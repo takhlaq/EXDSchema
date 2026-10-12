@@ -1,14 +1,15 @@
 name: QuestBattle
 fields:
-  - name: QuestBattleParams
+  - name: Define
     type: array
-    count: 220
+    count: 100
     fields:
-      - name: ScriptInstruction
-      - name: ScriptValue
+      - name: DefineName
+      - name: DefineValue
   - name: Quest
     type: link
-    targets: [ArrayEventHandler, Quest]
-  - name: TimeLimit
-  - name: LevelSync
-  - name: QuestBattleScene
+    targets:
+      - Quest
+  - name: LimitTime
+  - name: SyncLevel
+  - name: SubNo

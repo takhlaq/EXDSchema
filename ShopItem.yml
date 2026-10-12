@@ -1,0 +1,25 @@
+name: ShopItem
+fields:
+  - name: PriceMinParam
+  - name: PriceParam
+  - name: PriceMaxParam
+  - name: ItemId
+    type: link
+    targets:
+      - Item
+  - name: StainId
+    type: link
+    targets:
+      - Stain
+  - name: Quest
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Quest
+  - name: Achievement
+    type: link
+    targets:
+      - Achievement
+  - name: IsHQ

@@ -1,9 +1,0 @@
-name: FittingShopCategoryItem
-displayField: Item
-fields:
-  - name: Item
-    type: link
-    targets: [FittingShopItemSet, Item]
-  - name: DisplayId
-    comment: If not 0, the item will only appear if sent in a FittingShopUpdate packet.
-  - name: Unknown2

@@ -1,9 +1,9 @@
 name: Lobby
-displayField: Text
+displayField: TEXTText
 fields:
-  - name: Text
-  - name: Unknown0
-  - name: Unknown1
+  - name: TEXTText
+  - name: TEXTSub
+  - name: TEXTHelp
   - name: TYPE
   - name: PARAM
   - name: LINK

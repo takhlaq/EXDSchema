@@ -1,33 +1,33 @@
 name: Race
-displayField: Feminine
+displayField: Name
 fields:
-  - name: Masculine
-  - name: Feminine
-  - name: RSEMBody
-    type: link
-    targets: [Item]
-  - name: RSEFBody
-    type: link
-    targets: [Item]
-  - name: RSEMHands
-    type: link
-    targets: [Item]
-  - name: RSEFHands
-    type: link
-    targets: [Item]
-  - name: RSEMLegs
-    type: link
-    targets: [Item]
-  - name: RSEFLegs
-    type: link
-    targets: [Item]
-  - name: RSEMFeet
-    type: link
-    targets: [Item]
-  - name: RSEFFeet
-    type: link
-    targets: [Item]
-  - name: Unknown0
-  - name: ExPac
-    type: link
-    targets: [ExVersion]
+  - name: Name
+  - name: NameFemale
+  - name: Body
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item
+  - name: Hand
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item
+  - name: Leg
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item
+  - name: Foot
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item

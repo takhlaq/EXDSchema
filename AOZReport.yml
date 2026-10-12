@@ -1,9 +1,0 @@
-name: AOZReport
-fields:
-  - name: ContentFinderCondition
-    type: link
-    targets: [ContentFinderCondition]
-  - name: Reward
-    type: link
-    targets: [AOZReportReward]
-  - name: Order

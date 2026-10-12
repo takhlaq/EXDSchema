@@ -1,32 +1,44 @@
 name: Warp
+displayField: Name
 fields:
   - name: Name
   - name: Question
   - name: PopRange
     type: link
-    targets: [Level]
-  - name: ConditionSuccessEvent
+    targets:
+      - Level
+  - name: QualifiedPreTalk
     type: link
-    targets: [DefaultTalk]
-  - name: ConditionFailEvent
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: UnqualifiedPreTalk
     type: link
-    targets: [DefaultTalk]
-  - name: ConfirmEvent
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: UnqualifiedGilPreTalk
     type: link
-    targets: [DefaultTalk]
-  - name: TerritoryType
-    type: link
-    targets: [TerritoryType]
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
   - name: WarpCondition
     type: link
-    targets: [WarpCondition]
-  - name: WarpLogic
+    targets:
+      - WarpCondition
+  - name: Logic
     type: link
-    targets: [WarpLogic]
-  - name: StartCutscene
+    targets:
+      - WarpLogic
+  - name: PreCutScene
     type: link
-    targets: [Cutscene]
-  - name: EndCutscene
+    targets:
+      - Cutscene
+  - name: PostCutScene
     type: link
-    targets: [Cutscene]
-  - name: CanSkipCutscene
+    targets:
+      - Cutscene
+  - name: SkipCutSceneConfig

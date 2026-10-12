@@ -1,19 +1,18 @@
 name: GuildleveAssignment
 fields:
-  - name: Type
-  - name: AssignmentTalk
+  - name: Talk
     type: link
-    targets: [GuildleveAssignmentTalk]
-  - name: Quest
-    type: array
-    count: 2
-    fields:
-      - type: link
-        targets: [Quest]
-  - name: Unknown0
-  - name: RequiredGrandCompanyRank
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
-  - name: Unknown6
+    targets:
+      - GuildleveAssignmentTalk
+  - name: UnlockQuest
+    type: link
+    targets:
+      - Quest
+  - name: DecideQuest
+    type: link
+    targets:
+      - Quest
+  - name: NeedGrandCompanyRank
+  - name: HaveImmortalLeve
+  - name: HaveTwinAdderLeve
+  - name: HaveMaelstromLeve

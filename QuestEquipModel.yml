@@ -1,5 +1,0 @@
-name: QuestEquipModel
-fields:
-  - name: Model
-    type: modelId
-  - name: Slot

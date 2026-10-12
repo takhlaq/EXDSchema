@@ -1,7 +1,0 @@
-name: QuestDefineClient
-displayField: Text
-fields:
-  - name: Text
-  - name: DefineVaue
-    type: link
-    targets: [Item, Quest, ENpcBase, EObjName, Level]

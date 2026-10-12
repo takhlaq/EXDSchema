@@ -4,92 +4,77 @@ fields:
   - name: Name
   - name: Abbreviation
   - name: NameFemale
-  - name: CanQueueForDuty
-  - name: NameEnglish
-  - name: ItemSoulCrystal
+  - name: EnText
+  - name: JobCrystalItemId
     type: link
-    targets: [Item]
-  - name: UnlockQuest
+    targets:
+      - Item
+  - name: ARRRelicQuestId
     type: link
-    targets: [Quest]
-  - name: RelicQuest
+    targets:
+      - Quest
+  - name: ARRFinalJobQuest
     type: link
-    targets: [Quest]
-  - name: Prerequisite
+    targets:
+      - Quest
+  - name: HWFinalJobQuest
     type: link
-    targets: [Quest]
-  - name: ReplaceAction
-    type: link
-    targets: [ReplaceAction]
-  - name: ReplaceActionPvP
-    type: link
-    targets: [ReplaceAction]
-  - name: Unknown9
-  - name: ItemStartingWeaponMainHand
-    type: link
-    targets: [Item]
-  - name: ItemStartingWeaponOffHand
-    type: link
-    targets: [Item]
-  - name: ModifierHitPoints
-  - name: ModifierManaPoints
-  - name: ModifierStrength
-  - name: ModifierVitality
-  - name: ModifierDexterity
-  - name: ModifierIntelligence
-  - name: ModifierMind
-  - name: ModifierPiety
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
+    targets:
+      - Quest
+  - name: InitWeapon
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Item
+  - name: Hp
+  - name: Mp
+  - name: STR
+  - name: VIT
+  - name: DEX
+  - name: INT_
+  - name: MND
+  - name: PIE
+  - name: Element
+    type: array
+    count: 6
+  - name: LimitBreakAction
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - Action
+  - name: PvpLimitBreakAction
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - Action
+  - name: Kind
   - name: Unknown6
-  - name: Unknown7
-  - name: LimitBreak1
-    type: link
-    targets: [Action]
-  - name: LimitBreak2
-    type: link
-    targets: [Action]
-  - name: LimitBreak3
-    type: link
-    targets: [Action]
-  - name: ClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
-  - name: Unknown8
   - name: JobIndex
-  - name: PvPBaseParamValue
+  - name: MainClass
     type: link
-    targets: [PvPBaseParamValue]
-  - name: PvPActionSortRow
-  - name: PvPInitialSelectActionTrait
-    type: link
-    targets: [PvPInitialSelectActionTrait]
-  - name: ClassJobParent
-    type: link
-    targets: [ClassJob]
+    targets:
+      - ClassJob
   - name: Role
-  - name: StartingTown
     type: link
-    targets: [Town]
-  - name: PrimaryStat
+    targets:
+      - Role
+  - name: Town
+    type: link
+    targets:
+      - Town
   - name: UIPriority
   - name: StartingLevel
-  - name: PartyBonus
-  - name: JobType
-    comment: |
-      1 = Tank
-      2 = Pure Healer
-      3 = Melee
-      4 = Physical Ranged
-      5 = Magical Ranged
-      6 = Barrier Healer
-  - name: ExpArrayIndex
+  - name: PartyBuff
+  - name: WorkIndex
   - name: BattleClassIndex
-  - name: DohDolJobIndex
+  - name: CraftingClassIndex
   - name: MonsterNote
     type: link
-    targets: [MonsterNote]
-  - name: IsLimitedJob
-  - name: CanWearShield
+    targets:
+      - MonsterNote

@@ -1,11 +1,12 @@
 name: WeatherRate
 fields:
-  - name: Weather
+  - name: WeatherId
     type: array
     count: 8
     fields:
       - type: link
-        targets: [Weather]
+        targets:
+          - Weather
   - name: Rate
     type: array
     count: 8

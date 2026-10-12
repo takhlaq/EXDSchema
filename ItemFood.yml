@@ -1,32 +1,24 @@
 name: ItemFood
 fields:
-  - name: Max
-    type: array
-    count: 3
-  - name: MaxHQ
-    type: array
-    count: 3
-  - name: EXPBonusPercent
-  - name: BaseParam
+  - name: Param
     type: array
     count: 3
     fields:
       - type: link
-        targets: [BaseParam]
+        targets:
+          - BaseParam
   - name: Value
+    type: array
+    count: 3
+  - name: Limit
     type: array
     count: 3
   - name: ValueHQ
     type: array
     count: 3
-  - name: IsRelative
+  - name: LimitHQ
     type: array
     count: 3
-relations:
-  Params:
-    - BaseParam
-    - IsRelative
-    - Value
-    - Max
-    - ValueHQ
-    - MaxHQ
+  - name: Rate
+    type: array
+    count: 3

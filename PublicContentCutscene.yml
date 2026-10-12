@@ -1,9 +1,0 @@
-name: PublicContentCutscene
-displayField: Cutscene
-fields:
-  - name: Cutscene
-    type: link
-    targets: [Cutscene]
-  - name: Cutscene2
-    type: link
-    targets: [Cutscene]

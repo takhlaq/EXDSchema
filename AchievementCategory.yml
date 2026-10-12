@@ -2,9 +2,9 @@ name: AchievementCategory
 displayField: Name
 fields:
   - name: Name
-  - name: AchievementKind
+  - name: Kind
     type: link
-    targets: [AchievementKind]
-  - name: Order
+    targets:
+      - AchievementKind
   - name: ShowComplete
-  - name: HideCategory
+  - name: Valid

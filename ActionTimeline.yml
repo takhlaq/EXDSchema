@@ -1,27 +1,22 @@
 name: ActionTimeline
-displayField: Key
+displayField: Filename
 fields:
-  - name: Key
-  - name: WeaponTimeline
-    type: link
-    targets: [WeaponTimeline]
-  - name: KillUpper
-  - name: Unknown_70
+  - name: Filename
   - name: Type
   - name: Priority
   - name: Stance
   - name: Slot
   - name: LookAtMode
-  - name: ActionTimelineIDMode
+  - name: ActionTimelineEIDMode
+  - name: WeaponTimeline
+    type: link
+    targets:
+      - WeaponTimeline
   - name: LoadType
   - name: StartAttach
-  - name: ResidentPap
-  - name: Unknown6
-  - name: Unknown1
   - name: Pause
+  - name: ResidentPap
   - name: Resident
+  - name: KillUpper
   - name: IsMotionCanceledByMoving
-  - name: Unknown2
-  - name: Unknown3
   - name: IsLoop
-  - name: Unknown4

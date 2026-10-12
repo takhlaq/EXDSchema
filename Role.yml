@@ -1,4 +1,7 @@
 name: Role
+displayField: Name
 fields:
-  - name: Type
-    comment: 1 = Tank, 2 = DPS, 3 = Healer
+  - name: Name
+  - name: ShortName
+  - name: Icon
+    type: icon

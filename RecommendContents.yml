@@ -1,11 +1,12 @@
 name: RecommendContents
-displayField: Level
 fields:
-  - name: Level
+  - name: LayoutId
     type: link
-    targets: [Level]
+    targets:
+      - Level
   - name: ClassJob
     type: link
-    targets: [ClassJob]
-  - name: MinLevel
-  - name: MaxLevel
+    targets:
+      - ClassJob
+  - name: LvMin
+  - name: LvMax

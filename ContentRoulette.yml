@@ -2,79 +2,26 @@ name: ContentRoulette
 displayField: Name
 fields:
   - name: Name
-  - name: Category
-  - name: Unknown0
   - name: Description
-  - name: DutyType
-  - name: Unknown1
-    comment: "This would show Addon#102618, but the row is empty."
+  - name: Contents
   - name: Image
-    type: icon
-  - name: RewardPvPExp
-  - name: RewardSeriesExp
-  - name: Region
+  - name: ClearRewardA
     type: link
-    targets: [ContentFinderConditionRegion]
-  - name: ItemLevelRequired
-  - name: ItemLevelSync
-  - name: RewardTomeA
-  - name: RewardTomeB
-  - name: RewardTomeC
-  - name: RewardWolfMarks
-  - name: InstanceContent
+    targets:
+      - Item
+  - name: ClearRewardB
     type: link
-    targets: [InstanceContent]
-  - name: RequiredExVersion
+    targets:
+      - Item
+  - name: ItemLevel
     type: link
-    targets: [ExVersion]
-  - name: OpenRule
-    type: link
-    targets: [ContentRouletteOpenRule]
-  - name: RequiredLevel
-  - name: SyncedFromLevel
-  - name: ContentRouletteRoleBonus
-    type: link
-    targets: [ContentRouletteRoleBonus]
-  - name: SortKey
-  - name: ClassJobCategory
-    type: link
-    targets: [ClassJobCategory]
-  - name: ContentMemberType
-    type: link
-    targets: [ContentMemberType]
-  - name: Unknown9
-  - name: QueueMaxPlayers
-  - name: ContentType
-    type: link
-    targets: [ContentType]
-  - name: UICategory
-    type: link
-    targets: [ContentUICategory]
-  - name: TimeLimit
-    comment: "In minutes."
-  - name: TimeLimitMax
-    comment: "In minutes. If 0, only TimeLimit is displayed."
-  - name: LootModeType
-    type: link
-    targets: [LootModeType]
-  - name: Unknown15
-  - name: PenaltyTimestampArrayIndex
-    comment: "Index in PlayerState.PenaltyTimestamps"
-  - name: CompletionArrayIndex
-    comment: "Index in PlayerState.ContentRouletteCompletion"
-  - name: IsGoldSaucer
-  - name: IsInDutyFinder
-  - name: IsPvP
-  - name: AppliesHighestAverageDutyItemLevel
-    comment: "Displays Addon#2828."
-  - name: Unknown18
-  - name: AllowConsumableItems
-  - name: AllowPhoenixDown
-  - name: AllowReplacement
-  - name: RatedMatch
-  - name: Rated
-  - name: Unknown22
-    comment: "This would show Addon#10833, but the row does not exist."
-  - name: Unknown23
-  - name: Unknown24
-  - name: IsRegistrationAllowedFromAnyDataCenter
+    targets:
+      - ItemLevel
+  - name: PartyMemberCount
+  - name: TankCount
+  - name: HealerCount
+  - name: MeleeDPSCount
+  - name: RangedDPSCount
+  - name: Sortkey
+  - name: AllClearFlag
+  - name: EnableFinder

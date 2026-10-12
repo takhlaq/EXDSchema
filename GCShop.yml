@@ -1,5 +1,4 @@
 name: GCShop
 fields:
-  - name: GrandCompany
-    type: link
-    targets: [GrandCompany]
+  - name: ItemStartIndex
+  - name: ItemEndIndex

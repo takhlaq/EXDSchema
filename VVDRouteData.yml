@@ -1,6 +1,0 @@
-name: VVDRouteData
-displayField: NotebookEntry
-fields:
-  - name: NotebookEntry
-    type: link
-    targets: [VVDNotebookContents]

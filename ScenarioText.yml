@@ -1,0 +1,5 @@
+name: ScenarioText
+displayField: Text
+fields:
+  - name: Label
+  - name: Text

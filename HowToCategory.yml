@@ -1,4 +1,4 @@
 name: HowToCategory
-displayField: Category
+displayField: Name
 fields:
-  - name: Category
+  - name: Name

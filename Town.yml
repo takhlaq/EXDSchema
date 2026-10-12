@@ -1,6 +1,6 @@
 name: Town
-displayField: Name
+displayField: NameName
 fields:
-  - name: Name
+  - name: NameName
   - name: Icon
     type: icon

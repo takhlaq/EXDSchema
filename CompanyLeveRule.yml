@@ -1,10 +1,6 @@
 name: CompanyLeveRule
-displayField: Type
+displayField: Script
 fields:
-  - name: Type
+  - name: Script
   - name: Objective
-    type: link
-    targets: [LeveString]
   - name: Help
-    type: link
-    targets: [LeveString]

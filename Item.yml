@@ -1,202 +1,134 @@
 name: Item
-displayField: Name
+displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Description
-  - name: Name
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: ModelMain
+  - name: Help
+  - name: UIName
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: ModelId
     type: modelId
-  - name: ModelSub
+  - name: SubModelId
     type: modelId
-  - name: DamagePhys
-  - name: DamageMag
-  - name: Delayms
-  - name: BlockRate
-  - name: Block
-  - name: DefensePhys
-  - name: DefenseMag
-  - name: BaseParamValue
-    type: array
-    count: 6
-  - name: BaseParamValueSpecial
-    type: array
-    count: 6
-  - name: LevelEquip
-  - name: RequiredPvpRank
-  - name: EquipRestriction
+  - name: StackMax
+  - name: CategoryArg
+  - name: PriceMin
+  - name: Price
+  - name: PriceMax
+  - name: SortId
+  - name: RepairItem
     type: link
-    targets: [EquipRaceCategory]
-  - name: ClassJobCategory
+    targets:
+      - Item
+  - name: MirageItem
     type: link
-    targets: [ClassJobCategory]
-  - name: GrandCompany
-    type: link
-    targets: [GrandCompany]
-  - name: ItemSeries
-    type: link
-    targets: [ItemSeries]
-  - name: BaseParamModifier
-  - name: ClassJobUse
-    type: link
-    targets: [ClassJob]
-  - name: DamagePhysType
-    comment: |
-      1 = slashing (GLA/PLD, MRD/WAR, ROG/NIN, DRK, SAM, GNB, RPR, VPR, AST; CRP saw, LTW knife, BTN hatchet)
-      2 = piercing (LNC/DRG, ARC/BRD, MCH, DNC, RDM; WVR needle)
-      3 = blunt (PGL/MNK, CNJ/WHM, THM/BLM, ACN/SMN, SCH, SGE, BLU, PCT; BSM/ARM/GSM hammers, ALC, CUL, MIN pick, FSH rod)
-  - name: DefaultActionRange
-  - name: BaseParam
-    type: array
-    count: 6
-    fields:
-      - type: link
-        targets: [BaseParam]
-  - name: ItemSpecialBonus
-    type: link
-    targets: [ItemSpecialBonus]
-  - name: ItemSpecialBonusParam
-  - name: BaseParamSpecial
-    type: array
-    count: 6
-    fields:
-      - type: link
-        targets: [BaseParam]
-  - name: MaterializeType
-  - name: MateriaSlotCount
-  - name: SubStatCategory
-  - name: IsAdvancedMeldingPermitted
-  - name: IsPvP
-  - name: IsGlamorous
-  - name: AdditionalData
-    type: link
-    condition:
-      switch: FilterGroup
-      cases:
-        14: [HousingExterior, HousingInterior, HousingYardObject, HousingFurniture, HousingPreset, HousingUnitedExterior]
-        15: [Stain]
-        18: [TreasureHuntRank]
-        20: [GardeningSeed]
-        25: [AetherialWheel]
-        26: [CompanyAction]
-        27: [TripleTriadCard]
-        28: [AirshipExplorationPart]
-        32: [Orchestrion]
-        36: [SubmarinePart]
-  - name: StackSize
-  - name: PriceMid
-  - name: PriceLow
-  - name: ItemRepair
-    type: link
-    targets: [ItemRepairResource]
-  - name: ItemGlamour
-    type: link
-    targets: [Item]
+    targets:
+      - Item
   - name: Icon
     type: icon
-  - name: LevelItem
+  - name: Level
+  - name: Trait
     type: link
-    targets: [ItemLevel]
-  - name: SubcategorySort
-    comment: Used in conjunction with the ItemUICategory sortkeys to sort things like vendor lists
-  - name: ItemAction
+    targets:
+      - Trait
+  - name: Damage
+  - name: MagicDamage
+  - name: AttackInterval
+  - name: ShieldRate
+  - name: ShieldBlockRate
+  - name: Defense
+  - name: MagicDefense
+  - name: RecastTime
+  - name: Action
     type: link
-    targets: [ItemAction]
-  - name: Cooldowns
-  - name: Desynth
-  - name: AetherialReduce
+    targets:
+      - ItemAction
+  - name: Salvage
+    type: link
+    targets:
+      - ItemSalvage
+  - name: Unknown
+  - name: BonusValue
+    type: array
+    count: 6
+  - name: EquipLevel
+  - name: EquipPvPRank
+  - name: Category
+  - name: UICategory
+    type: link
+    targets:
+      - ItemUICategory
+  - name: SearchCategory
+    type: link
+    targets:
+      - ItemSearchCategory
   - name: Rarity
-  - name: FilterGroup
-    comment: |
-      1 = Physical Weapon
-      2 = Magical Weapon
-      3 = Shield
-      4 = Gear
-      5 = Meal
-      6 = Medicine
-      7 = Deep Dungeon Usable (Manuals, Medicine, Potions)
-      8 = Potion (HP)
-      9 = Ether (MP)
-      10 = Elixir (HP+MP)
-      11 = Crystal
-      12 = Crafting Material
-      13 = Materia
-      14 = Housing
-      15 = Dyes
-      16 = Misc (Various stuff)
-      17 = Fishing Bait
-      18 = Treasure Map
-      19 = Useables (Various stuff)
-      20 = Gardening Seed
-      21 = Gardening Soil
-      22 = Gardening Fertilizer
-      23 = Secret Recipe Book
-      24 = unused
-      25 = Aetherial Wheel
-      26 = Primed Aetherial Wheel
-      27 = Triple Triad Card
-      28 = Airship Component
-      29 = Currency
-      30 = Folklore Book
-      31 = Soul Crystal
-      32 = Orchestrion Roll
-      33 = Aquarium Tank Trimming
-      34 = Painting
-      35 = Tales Of Adventure Retainer
-      36 = Submersible Component
-      37 = Eureka Logos Action Ingredient
-      38 = Bozja Mettle
-      39 = Bozja Lost Action
-      40 = Bozjan Cluster
-      41 = unused
-      42 = unused
-      43 = Placeholder Item
-      44 = Belts
-      45 = ArchiveItem (RowId in AdditionalData)
-      46 = unused
-      47 = Sanctuary Cowrie
-      48 = Sanctuary Material
-      49 = Adventurers Parcel
-      50 = Cosmic Exploration Material
-      51 = Outfit
-      52 = Occult Crescent Knowledge
-      53 = Occult Crescent Phantom Experience
-      54 = Occult Crescent Enlightenment Piece
-      55 = Cosmic Exploration Cosmocredit
-      56 = Cosmic Exploration Lunar Credit
-      57 = Occult Crescent Sanguine Cipher
-      58 = Cosmic Exploration Dronebits
-      59 = Cosmic Exploration Tool Mastery Points
-      60 = Old Dyes
-  - name: ItemUICategory
+  - name: MaterializeType
+  - name: MateriaSocket
+  - name: Slot
     type: link
-    targets: [ItemUICategory]
-  - name: ItemSearchCategory
+    targets:
+      - EquipSlotCategory
+  - name: BonusType
+    type: array
+    count: 6
+    fields:
+      - type: link
+        targets:
+          - BaseParam
+  - name: SpecialBonus
     type: link
-    targets: [ItemSearchCategory]
-  - name: EquipSlotCategory
+    targets:
+      - ItemSpecialBonus
+  - name: SpecialBonusType
+    type: array
+    count: 6
+    fields:
+      - type: link
+        targets:
+          - BaseParam
+  - name: Repair
+  - name: Class
     type: link
-    targets: [EquipSlotCategory]
-  - name: ItemSortCategory
+    targets:
+      - ClassJobCategory
+  - name: AttackType
+  - name: AttackRange
+  - name: CastTime
+  - name: CondClassJob
+  - name: Series
     type: link
-    targets: [ItemSortCategory]
-  - name: DyeCount
-  - name: CastTimeSeconds
-  - name: ClassJobRepair
-    comment: "This applies to both repairs and desynthesis, so irreparable but desynthesizable items such as fish or furniture will have a ClassJobRepair value."
+    targets:
+      - ItemSeries
+  - name: SellPriceParam
+  - name: CondGrandCompany
     type: link
-    targets: [ClassJob]
-  - name: IsUnique
-  - name: IsUntradable
-  - name: IsIndisposable
+    targets:
+      - GrandCompany
+  - name: Role
+  - name: SpecialBonusValue
+    type: array
+    count: 6
+  - name: ConditionRace
+    type: array
+    count: 5
+  - name: DisablePassedOthers
+  - name: OnlyOne
+  - name: DisableAbandon
+  - name: MateriaProhibition
+  - name: Crest
+  - name: Stain
+    type: link
+    targets:
+      - Stain
   - name: Lot
-  - name: CanBeHq
-  - name: IsCrestWorthy
-  - name: IsCollectable
-  - name: AlwaysCollectable
+  - name: HQ
+  - name: MateriaEffectOnlyInPvP
+  - name: ConditionFemale
+  - name: ConditionMale
+  - name: DisableSameAccount

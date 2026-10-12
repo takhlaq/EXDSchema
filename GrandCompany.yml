@@ -3,13 +3,14 @@ displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: NamePrepositional
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
+  - name: SWT
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
   - name: MonsterNote
     type: link
-    targets: [MonsterNote]
+    targets:
+      - MonsterNote

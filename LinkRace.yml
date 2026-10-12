@@ -1,6 +1,5 @@
 name: LinkRace
 fields:
-  - name: Unknown0
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
+  - name: Link
+    type: array
+    count: 4

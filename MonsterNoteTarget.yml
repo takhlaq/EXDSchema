@@ -1,23 +1,26 @@
 name: MonsterNoteTarget
-displayField: BNpcName
 fields:
   - name: Icon
     type: icon
-  - name: BNpcName
+  - name: Monster
     type: link
-    targets: [BNpcName]
-  - name: PlaceNameZone
+    targets:
+      - BNpcName
+  - name: ZoneName
     type: array
     count: 3
     fields:
       - type: link
-        targets: [PlaceName]
-  - name: PlaceNameLocation
+        targets:
+          - PlaceName
+  - name: AreaName
     type: array
     count: 3
     fields:
       - type: link
-        targets: [PlaceName]
+        targets:
+          - PlaceName
   - name: Town
     type: link
-    targets: [Town]
+    targets:
+      - Town

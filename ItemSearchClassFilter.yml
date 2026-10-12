@@ -1,0 +1,5 @@
+name: ItemSearchClassFilter
+displayField: Name
+fields:
+  - name: Name
+  - name: Class

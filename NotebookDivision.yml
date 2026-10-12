@@ -2,24 +2,8 @@ name: NotebookDivision
 displayField: Name
 fields:
   - name: Name
-  - name: QuestUnlock
-    type: link
-    targets: [Quest]
-  - name: NotebookDivisionCategory
-    type: link
-    targets: [NotebookDivisionCategory]
   - name: CraftOpeningLevel
   - name: GatheringOpeningLevel
-  - name: MinimumQuestSequence
-  - name: Unknown0
-  - name: SecretRecipeBookGroups
-    type: array
-    count: 2
-    fields:
-      - type: link
-        targets: [SecretRecipeBookGroup]
-  - name: AllowedCraftTypes
-    comment: "Index is CraftType"
+  - name: CanUseCraft
     type: array
     count: 8
-  - name: RequiresSecretRecipeBookGroupUnlock

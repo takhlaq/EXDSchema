@@ -1,4 +1,4 @@
 name: CycleTime
 fields:
-  - name: FirstCycle
+  - name: FirstCycleOffset
   - name: Cycle

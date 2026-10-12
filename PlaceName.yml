@@ -1,17 +1,13 @@
 name: PlaceName
-displayField: Name
+displayField: Singular
 fields:
-  - name: Name
-  - name: NameNoArticle
-  - name: NamePrepositional
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: Order
-  - name: Unknown8
-  - name: MapCondition
-    type: link
-    targets: [MapCondition]
+  - name: Singular
+  - name: Plural
+  - name: SWT
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: LocationTitle

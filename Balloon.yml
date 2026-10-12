@@ -1,5 +1,5 @@
 name: Balloon
-displayField: Dialogue
+displayField: Message
 fields:
-  - name: Dialogue
+  - name: Message
   - name: Slowly

@@ -2,7 +2,8 @@ name: MapSymbol
 fields:
   - name: Icon
     type: icon
-  - name: PlaceName
+  - name: Name
     type: link
-    targets: [PlaceName]
+    targets:
+      - PlaceName
   - name: DisplayNavi

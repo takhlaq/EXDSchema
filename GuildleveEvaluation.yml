@@ -1,0 +1,4 @@
+name: GuildleveEvaluation
+displayField: Name
+fields:
+  - name: Name

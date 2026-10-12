@@ -1,7 +1,0 @@
-name: GameRewardObtainType
-fields:
-  - name: Icon
-    type: icon
-  - name: Text
-    type: link
-    targets: [Addon]

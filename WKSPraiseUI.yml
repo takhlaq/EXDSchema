@@ -1,5 +1,0 @@
-name: WKSPraiseUI
-fields:
-  - name: Message
-  - name: Backdrop
-    type: icon

@@ -5,10 +5,11 @@ fields:
     count: 8
     fields:
       - type: link
-        targets: [Item]
-  - name: Quantity
+        targets:
+          - Item
+  - name: Count
     type: array
     count: 8
-  - name: RecipeLevel
+  - name: Level
     type: array
     count: 8

@@ -1,17 +1,31 @@
 name: Treasure
-displayField: SGB
+displayField: Singular
 fields:
   - name: Singular
   - name: Plural
-  - name: Adjective
-  - name: PossessivePronoun
-  - name: StartsWithVowel
-  - name: Countability
-  - name: Pronoun
-  - name: Article
-  - name: SGB
+  - name: SGG
+  - name: PLG
+  - name: VOW
+  - name: CNT
+  - name: GEN
+  - name: DEF
+  - name: Type
+  - name: KeyItem
     type: link
-    targets: [ExportedSG]
-  - name: Unknown_70
-  - name: Unknown8
-  - name: Unknown9
+    targets:
+      - Item
+  - name: Model
+    type: link
+    targets:
+      - ModelChara
+  - name: Item
+    type: link
+    targets:
+      - Item
+  - name: SubItem
+    type: link
+    targets:
+      - Item
+  - name: SharedGroup
+  - name: Zone
+  - name: Rate

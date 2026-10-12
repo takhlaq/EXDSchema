@@ -1,5 +1,0 @@
-name: QuestAdditionalToolIcon
-displayField: Icon
-fields:
-  - name: Icon
-    type: icon

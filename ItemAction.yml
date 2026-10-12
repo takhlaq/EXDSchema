@@ -2,14 +2,27 @@ name: ItemAction
 fields:
   - name: Action
     type: link
-    targets: [Action]
-  - name: Data
+    targets:
+      - Action
+  - name: Calcu0Arg
     type: array
-    count: 9
-  - name: DataHQ
+    count: 3
+  - name: Calcu1Arg
     type: array
-    count: 9
+    count: 3
+  - name: Calcu2Arg
+    type: array
+    count: 3
+  - name: HQCalcu0Arg
+    type: array
+    count: 3
+  - name: HQCalcu1Arg
+    type: array
+    count: 3
+  - name: HQCalcu2Arg
+    type: array
+    count: 3
   - name: CondLv
-  - name: CondBattle
-  - name: CondPVP
   - name: CondPVPOnly
+  - name: CondPVP
+  - name: CondBattle

@@ -1,42 +1,14 @@
 name: HousingFurniture
-displayField: Item
 fields:
-  - name: UsageParameter
-  - name: CustomTalk
-    type: link
-    targets: [CustomTalk]
+  - name: Param
+  - name: EventHandler
   - name: Item
     type: link
-    targets: [Item]
-  - name: ModelKey
-  - name: HousingItemCategory
-  - name: UsageType
-    comment: |
-      0 = Static furnishing
-      3 = Vendor Permit
-      4 = Crafting Workbenche
-      7 = Food
-      8 = Aetherial Wheel
-      9 = Triple Triad Board
-      10 = Orchestrion
-      11 = Flowerpot
-      12 = Vase
-      13 = Aquarium
-      14 = Message Book
-      15 = Mannequin
-  - name: PlaceLimitType
-    comment: Any furnishings with the same type are counted towards the limit. For example, all vendor permits are grouped together under the same key.
-  - name: AquariumTier
-  - name: Placement
-    type: link
-    targets: [HousingPlacement]
-  - name: Unplacement
-    type: link
-    targets: [HousingUnplacement]
-  - name: UnplacementStorage
-    type: link
-    targets: [HousingUnplacement]
-  - name: DestroyOnRemoval
-  - name: Unknown4
-  - name: Unknown5
-  - name: Unknown6
+    targets:
+      - Item
+  - name: ID
+  - name: Category
+  - name: UseType
+  - name: LayoutLimit
+  - name: HasCrest
+  - name: Disposable

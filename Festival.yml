@@ -1,8 +1,4 @@
 name: Festival
-displayField: Name
+displayField: name
 fields:
-  - name: Name
-  - name: IsAllSaintsWake
-  - name: WeatherRate
-    type: link
-    targets: [WeatherRate]
+  - name: name

@@ -1,5 +1,7 @@
 name: ContentsNoteCategory
-displayField: Name
 fields:
-  - name: Name
-  - name: SortKey
+  - name: ContentType
+    type: link
+    targets:
+      - ContentType
+  - name: UIPriority

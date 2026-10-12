@@ -1,7 +1,6 @@
 name: Title
-displayField: Feminine
+displayField: Male
 fields:
-  - name: Masculine
-  - name: Feminine
-  - name: IsPrefix
-  - name: Order
+  - name: Male
+  - name: Female
+  - name: Front

@@ -1,14 +1,11 @@
 name: GardeningSeed
-displayField: Item
 fields:
-  - name: Item
+  - name: Crop
     type: link
-    targets: [Item]
-  - name: Icon
+    targets:
+      - Item
+  - name: HarvestIcon
     type: icon
-  - name: ModelID
-  - name: PlantPotFlowerSeed
-    type: link
-    targets: [PlantPotFlowerSeed]
+  - name: ModelId
+    type: modelId
   - name: SE
-  - name: IsPlantPotFlowerSeed

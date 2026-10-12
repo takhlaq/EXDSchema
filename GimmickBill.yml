@@ -1,4 +1,4 @@
 name: GimmickBill
-displayField: Text
+displayField: Message
 fields:
-  - name: Text
+  - name: Message

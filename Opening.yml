@@ -1,13 +1,14 @@
 name: Opening
-displayField: Name
+displayField: Script
 fields:
-  - name: Variables
+  - name: Define
     type: array
     count: 40
     fields:
       - name: Name
       - name: Value
-  - name: Name
+  - name: Script
   - name: Quest
     type: link
-    targets: [Quest]
+    targets:
+      - Quest

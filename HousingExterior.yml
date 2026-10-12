@@ -1,9 +1,9 @@
 name: HousingExterior
 fields:
-  - name: Model
-  - name: PlaceName
+  - name: Region
     type: link
-    targets: [PlaceName]
-  - name: Unknown0
-  - name: Unknown1
-  - name: HousingSize
+    targets:
+      - PlaceName
+  - name: ID
+  - name: Category
+  - name: Size

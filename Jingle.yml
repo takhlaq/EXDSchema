@@ -1,4 +1,4 @@
 name: Jingle
-displayField: Name
+displayField: Path
 fields:
-  - name: Name
+  - name: Path

@@ -1,9 +1,0 @@
-name: MountCustomize
-fields:
-  - name: Scale
-    type: array
-    count: 21
-  - name: CameraHeight
-    type: array
-    count: 21
-  - name: Unknown4

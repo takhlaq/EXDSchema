@@ -1,17 +1,9 @@
 name: Stain
-displayField: Name
 fields:
-  - name: InlineName
-  - name: Name
   - name: Color
     type: color
   - name: Item
-    type: array
-    count: 2
-    fields:
-    - type: link
-      targets: [Item]
-  - name: Shade
-  - name: SubOrder
-  - name: IsMetallic
-  - name: IsHousingApplicable
+    type: link
+    targets:
+      - Item
+  - name: Category

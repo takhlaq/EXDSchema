@@ -1,9 +1,0 @@
-name: ChocoboRaceStatus
-displayField: Status
-fields:
-  - name: Status
-    type: link
-    targets: [Status]
-  - name: VFX
-    type: link
-    targets: [VFX]

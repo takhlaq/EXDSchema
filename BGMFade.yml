@@ -1,7 +1,14 @@
 name: BGMFade
 fields:
   - name: SceneOut
-  - name: SceneIn
-  - name: BGMFadeType
     type: link
-    targets: [BGMFadeType]
+    targets:
+      - BGMScene
+  - name: SceneIn
+    type: link
+    targets:
+      - BGMScene
+  - name: FadeType
+    type: link
+    targets:
+      - BGMFadeType

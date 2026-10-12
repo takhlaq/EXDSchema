@@ -1,13 +1,8 @@
 name: World
+displayField: Name
 fields:
-  - name: InternalName
+  - name: Help
   - name: Name
-  - name: DataCenter
-    type: link
-    targets: [WorldDCGroupType]
-  - name: Unknown0
   - name: UserType
-  - name: Unknown1
-  - name: Region
-  - name: Unknown2
-  - name: IsPublic
+  - name: DCGroup
+  - name: Public

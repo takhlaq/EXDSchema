@@ -1,0 +1,10 @@
+name: HousingEmploymentNpcType
+fields:
+  - name: ENpcType
+    type: array
+    count: 10
+    fields:
+      - name: ENpcId
+        type: link
+        targets:
+          - ENpcResident

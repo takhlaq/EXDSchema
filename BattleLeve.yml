@@ -1,44 +1,53 @@
 name: BattleLeve
 fields:
-  - name: Time
-    type: array
-    count: 8
-  - name: LeveData
+  - name: RoutePointTime
     type: array
     count: 8
     fields:
-      - name: BNpcName
+      - name: RoutePointTime
+  - name: Entry
+    type: array
+    count: 8
+    fields:
+      - name: NameId
         type: link
-        targets: [BNpcName]
-      - name: ToDoNumberInvolved
-      - name: ToDoParam
+        targets:
+          - BNpcName
+      - name: Param
         type: array
-        count: 5
-      - name: BaseID
+        count: 6
+      - name: BaseId
+      - name: DropEventItemId
         type: link
-        targets: [EventItem, BNpcBase]
-      - name: ItemsInvolved
-        type: link
-        targets: [EventItem]
-      - name: EnemyLevel
-      - name: ItemsInvolvedQty
-      - name: ItemDropRate
+        targets:
+          - EventItem
+      - name: Level
+      - name: DropEventItemMax
+      - name: DropEventItemRate
       - name: NumOfAppearance
         type: array
         count: 8
-  - name: ToDoSequence
+  - name: Todo
     type: array
     count: 8
+    fields:
+      - name: TodoSequence
   - name: Rule
     type: link
-    targets: [BattleLeveRule]
-  - name: Objectives
+    targets:
+      - BattleLeveRule
+  - name: Objective
     type: array
     count: 3
     fields:
       - type: link
-        targets: [LeveString]
+        targets:
+          - Addon
   - name: Help
     type: array
     count: 2
-  - name: Variant
+    fields:
+      - type: link
+        targets:
+          - Addon
+  - name: Variation

@@ -11,5 +11,5 @@ fields:
   - name: ConfigSwitch
     type: array
     count: 3
-  - name: ResetByLookAt
   - name: ForceAttractByPhysicsOff
+  - name: ResetByLookAt

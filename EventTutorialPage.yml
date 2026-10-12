@@ -1,7 +1,0 @@
-name: EventTutorialPage
-displayField: Name
-fields:
-  - name: Name
-  - name: Text
-  - name: Image
-    type: icon

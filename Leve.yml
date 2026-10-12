@@ -2,69 +2,80 @@ name: Leve
 displayField: Name
 fields:
   - name: Name
-  - name: Description
-  - name: ExpFactor
-  - name: ExpReward
-  - name: GilReward
-  - name: LeveRewardItem
+  - name: Objective
+  - name: RewardExpRate
+  - name: RewardStaticExp
+  - name: RewardGil
+  - name: RewardItem
     type: link
-    targets: [LeveRewardItem]
-  - name: JournalGenre
+    targets:
+      - Item
+  - name: RewardAdditionalItem
     type: link
-    targets: [JournalGenre]
-  - name: LevelLevemete
+    targets:
+      - Item
+  - name: TodoListener
+  - name: StartMarker
+  - name: Client
     type: link
-    targets: [Level]
-  - name: LevelStart
+    targets:
+      - LeveClient
+  - name: AssignmentType
     type: link
-    targets: [Level]
-  - name: LeveClient
-    type: link
-    targets: [LeveClient]
-  - name: LeveAssignmentType
-    type: link
-    targets: [LeveAssignmentType]
+    targets:
+      - LeveAssignmentType
   - name: Town
     type: link
-    targets: [Town]
-  - name: PlaceNameStart
+    targets:
+      - Town
+  - name: Evaluation
     type: link
-    targets: [PlaceName]
-  - name: PlaceNameIssued
+    targets:
+      - GuildleveEvaluation
+  - name: Location
     type: link
-    targets: [PlaceName]
-  - name: PlaceNameStartZone
+    targets:
+      - PlaceName
+  - name: Genre
     type: link
-    targets: [PlaceName]
-  - name: IconCityState
+    targets:
+      - JournalGenre
+  - name: Region
+    type: link
+    targets:
+      - PlaceName
+  - name: Area
+    type: link
+    targets:
+      - PlaceName
+  - name: PlateRegionIcon
     type: icon
-  - name: DataId
+  - name: GameData
     type: link
-    targets: [CraftLeve, CompanyLeve, GatheringLeve, BattleLeve]
-  - name: IconIssuer
-    type: icon
-  - name: ClassJobLevel
-  - name: FishingSpot
-    type: link
-    targets: [FishingSpot]
+    targets:
+      - CraftLeve
+      - BattleLeve
+      - GatheringLeve
+      - CompanyLeve
+  - name: Header
+  - name: ClassLevel
   - name: BGM
     type: link
-    targets: [BGM]
-  - name: Unknown1
+    targets:
+      - BGM
   - name: TimeLimit
-  - name: AllowanceCost
-  - name: SpearfishingNotebook
+  - name: ClassJob
     type: link
-    targets: [SpearfishingNotebook]
-  - name: ClassJobCategory
+    targets:
+      - ClassJobCategory
+  - name: PlateDesignVfx
     type: link
-    targets: [ClassJobCategory]
-  - name: MaxDifficulty
-  - name: LeveVfx
+    targets:
+      - LeveVfx
+  - name: PlateFrameVfx
     type: link
-    targets: [LeveVfx]
-  - name: LeveVfxFrame
-    type: link
-    targets: [LeveVfx]
-  - name: CanCancel
-  - name: LockedLeve
+    targets:
+      - LeveVfx
+  - name: Cancellable
+  - name: Difficulty
+  - name: Special

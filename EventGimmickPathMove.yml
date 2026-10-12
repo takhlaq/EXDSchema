@@ -1,9 +1,0 @@
-name: EventGimmickPathMove
-fields:
-  - name: EventRange
-    comment: Refers to an instanced game object.
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5

@@ -1,13 +1,13 @@
 name: Tribe
-displayField: Feminine
+displayField: Name
 fields:
-  - name: Masculine
-  - name: Feminine
+  - name: Name
+  - name: NameFemale
   - name: Hp
   - name: Mp
   - name: STR
   - name: VIT
   - name: DEX
-  - name: INT
+  - name: INT_
   - name: MND
   - name: PIE

@@ -1,5 +1,0 @@
-name: FishingBaitParameter
-fields:
-  - name: Item
-    type: link
-    targets: [Item]

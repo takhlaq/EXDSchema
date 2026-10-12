@@ -1,7 +1,7 @@
 name: BGM
-displayField: File
+displayField: Path
 fields:
-  - name: File
+  - name: Path
   - name: DisableRestartResetTime
   - name: Priority
   - name: SpecialMode

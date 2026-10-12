@@ -1,9 +1,0 @@
-name: WKSAchievementRewardItem
-fields:
-  - name: Item
-    type: link
-    targets: [Item]
-  - name: ToolClass
-    type: link
-    targets: [WKSCosmoToolClass]
-  - name: Unknown2

@@ -2,15 +2,13 @@ name: GeneralAction
 displayField: Name
 fields:
   - name: Name
-  - name: Description
+  - name: Help
   - name: Icon
     type: icon
   - name: Action
     type: link
-    targets: [Action]
-  - name: UnlockLink
-  - name: Unknown0
+    targets:
+      - Action
+  - name: Reward
   - name: Recast
   - name: UIPriority
-  - name: Unknown2
-  - name: Unknown1

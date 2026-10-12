@@ -1,56 +1,18 @@
 name: TerritoryIntendedUse
 fields:
-  - name: Unknown0
-  - name: GayaSoundId
-    comment: "Ambient noise of people talking in a crowd. Values: 0 = None, 1 = sound/strm/GAYA_LestArea_01.scd, 2 = sound/strm/GAYA_Village_01.scd"
-  - name: ChatRule
-    type: link
-    targets: [TerritoryChatRule]
-  - name: Unknown3
-  - name: EnableCrafting
-  - name: EnableGathering
-  - name: EnableRepairs
-  - name: EnableClassJobChange
-  - name: EnableClassJobChangeCombatJobCheck
-    comment: When true, requires that the target ClassJob is a combat job
-  - name: EnableJobChangeToLimitedJob
-  - name: EnableCompanion
-    comment: Enables summoning Chocobo Companion
-  - name: EnablePets
-    comment: Enables summoning Summoner/Scholar pets
-  - name: EnableRidePillion
-  - name: DisableLogoutTimer
-  - name: EnableTeleport
+  - name: BuzzType
   - name: EnableReturn
-  - name: EnableMinions
-  - name: EnableOrnaments
-  - name: EnableRevive
-    comment: Can return to the starting point when dead. Do not confuse with Raise.
-  - name: EnableRecommendedDuties
-    comment: Opens the Recommended Duties window upon login or area change
-  - name: Unknown20
-  - name: DisableMapDiscovery
-  - name: DisableFieldMarkers
-  - name: Unknown23
-  - name: EnableActions
-  - name: EnableConsumableItems
-  - name: Unknown26
-  - name: EnableTripleTriadMatches
-  - name: EnableTripleTriadMatchesAnywhere
-  - name: Unknown29
-  - name: Unknown30
-  - name: EnableIdleCamLineOfSightCheck
-    comment: Only entities in line of sight will be shown.
-  - name: CanPauseTimeWeather
-  - name: Unknown33
-  - name: EnablePvPQuickChat
-  - name: Unknown35
-  - name: EnablePerform
-  - name: CanApplyGlamourPlatesAnywhere
-  - name: Unknown38
-    comment: Related to idle timer
-  - name: EnableFieldMarkerPresets
-  - name: IgnoreCombatFlagForMarkers
-  - name: Unknown41
-    comment: Related to blocking Say/Yell/Shout of a muted player in Eureka/Bozja/OccultCrescent
-  - name: Unknown42
+  - name: EnableTeleport
+  - name: ImmediatelyLogout
+  - name: EnablePet
+  - name: EnableBuddy
+  - name: ClassJobChange
+  - name: Repair
+  - name: Craft
+  - name: RecastPenalty
+  - name: EnableAction
+  - name: SELimit
+  - name: EnableDiscoveryNotification
+  - name: EnableRecommend
+  - name: EnableHomePoint
+  - name: EnableCompanion

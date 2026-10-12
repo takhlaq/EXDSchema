@@ -1,0 +1,38 @@
+name: Shop
+displayField: Name
+fields:
+  - name: Name
+  - name: MapIcon
+    type: icon
+  - name: Quest
+    type: link
+    targets:
+      - Quest
+  - name: QualifiedTalk
+    type: link
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: UnqualifiedTalk
+    type: link
+    targets:
+      - DefaultTalk
+      - SwitchTalk
+      - CustomTalk
+  - name: Item
+    type: array
+    count: 40
+    fields:
+      - type: link
+        targets:
+          - ShopItem
+  - name: BeastTribe
+    type: link
+    targets:
+      - BeastTribe
+  - name: BeastReputationRank
+    type: link
+    targets:
+      - BeastReputationRank
+  - name: PriceChangeFlag

@@ -1,6 +1,0 @@
-name: WKSMissionToDoEvalutionItem
-displayField: Item
-fields:
-  - name: Item
-    type: link
-    targets: [WKSItemInfo]

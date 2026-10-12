@@ -2,25 +2,15 @@ name: MapMarker
 fields:
   - name: Icon
     type: icon
-  - name: PlaceNameSubtext
+  - name: Name
     type: link
-    targets: [PlaceName]
-  - name: DataKey
-    type: link
-    condition:
-      switch: DataType
-      cases:
-        1: [Map]
-        2: [Map]
-        3: [Aetheryte]
-        4: [PlaceName]
-  - name: MapMarkerUnlockedBit
-  - name: X
-  - name: Y
-  - name: SubtextOrientation
-  - name: MapMarkerRegion
-    type: link
-    targets: [MapMarkerRegion]
-  - name: Type
-  - name: DataType
-  - name: Unknown0
+    targets:
+      - PlaceName
+  - name: EventSubArg
+  - name: EventArg
+  - name: PosX
+  - name: PosY
+  - name: Start
+  - name: Layout
+  - name: TextType
+  - name: EventType

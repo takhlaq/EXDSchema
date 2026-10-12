@@ -1,6 +1,0 @@
-name: MinionStage
-displayField: Name
-fields:
-  - name: Name
-  - name: Unknown1
-  - name: Unknown2

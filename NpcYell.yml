@@ -1,20 +1,8 @@
 name: NpcYell
-displayField: Text
+displayField: NpcTextText
 fields:
-  - name: Text
-  - name: Unknown6
+  - name: NpcTextText
   - name: BalloonTime
-  - name: Name
-    type: link
-    targets: [ENpcResident, BNpcName]
-  - name: Unknown7
-  - name: Unknown8
-  - name: OutputType
-  - name: Unknown_70
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
-  - name: Unknown5
-  - name: IsBalloonSlow
   - name: BattleTalkTime
+  - name: OutputType
+  - name: IsBalloonSlow

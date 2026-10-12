@@ -1,7 +1,0 @@
-name: DeepDungeonHardModeItem
-fields:
-  - name: Unknown0
-  - name: Item
-    type: link
-    targets: [Item]
-  - name: Unknown2

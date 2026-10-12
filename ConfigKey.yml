@@ -1,12 +1,9 @@
 name: ConfigKey
+displayField: Text
 fields:
   - name: Text
   - name: Label
-  - name: Unknown0
   - name: Param
   - name: Platform
   - name: Category
-  - name: BacklightColor
-    type: link
-    targets: [BacklightColor]
   - name: Required

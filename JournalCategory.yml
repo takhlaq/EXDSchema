@@ -4,9 +4,3 @@ fields:
   - name: Name
   - name: SeparateType
   - name: DataType
-  - name: JournalSection
-    type: link
-    targets: [JournalSection]
-  - name: MapCondition
-    type: link
-    targets: [MapCondition]

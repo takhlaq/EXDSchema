@@ -1,8 +1,0 @@
-name: ChocoboRaceChallenge
-fields:
-  - name: Name
-  - name: ChocoboRace
-    type: link
-    targets: [ChocoboRace]
-  - name: Unknown2
-  - name: RatingRequirement

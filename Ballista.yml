@@ -1,23 +1,17 @@
 name: Ballista
 fields:
-  - name: BNPC
+  - name: BNpc
     type: link
-    targets: [BNpcBase]
+    targets:
+      - BNpcName
   - name: Angle
-  - name: Action0
-    type: link
-    targets: [Action]
-  - name: Action1
-    type: link
-    targets: [Action]
-  - name: Action2
-    type: link
-    targets: [Action]
-  - name: Action3
-    type: link
-    targets: [Action]
+  - name: Action
+    type: array
+    count: 2
+    fields:
+      - type: link
+        targets:
+          - Action
   - name: Bullet
-  - name: Unknown0
-  - name: Unknown1
   - name: Near
   - name: Far

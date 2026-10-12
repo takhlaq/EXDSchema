@@ -1,6 +1,0 @@
-name: GimmickTalk
-displayField: Message
-fields:
-  - name: Message
-  - name: Unknown1
-  - name: Unknown2

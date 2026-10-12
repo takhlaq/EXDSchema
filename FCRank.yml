@@ -3,8 +3,12 @@ fields:
   - name: NextPoint
   - name: CurrentPoint
   - name: Rights
-  - name: Unknown0
-  - name: Unknown1
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - FCRights
   - name: FCActionActiveNum
   - name: FCActionStockNum
-  - name: FCChestCompartments
+  - name: FCChestBoxNum

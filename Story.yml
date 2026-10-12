@@ -1,12 +1,13 @@
 name: Story
+displayField: Script
 fields:
-  - name: StoryParams
+  - name: Define
     type: array
     count: 40
     fields:
-      - name: Instruction
-      - name: Argument
-  - name: StoryDefine
+      - name: Name
+      - name: Value
+  - name: Sequence
     type: array
     count: 110
     fields:
@@ -15,13 +16,15 @@ fields:
         count: 3
         fields:
           - type: link
-            targets: [Quest]
+            targets:
+              - Quest
       - name: AcceptedQuest
         type: array
         count: 3
         fields:
           - type: link
-            targets: [Quest]
+            targets:
+              - Quest
       - name: LayerSet
         type: array
         count: 2
@@ -31,19 +34,14 @@ fields:
       - name: AcceptedQuestSequence
         type: array
         count: 3
-  - name: StoryListener
+  - name: VisibleListener
     type: array
     count: 80
     fields:
       - name: Listener
-        type: link
-        targets: [EObjName, ENpcResident]
       - name: SequenceBegin
       - name: SequenceEnd
   - name: Script
   - name: LayerSetTerritoryType
     type: array
     count: 2
-    fields:
-      - type: link
-        targets: [TerritoryType]

@@ -1,3 +1,10 @@
 name: PvPRank
+displayField: PvPTitleMale
 fields:
-  - name: ExpRequired
+  - name: PvPTitleMale
+    type: array
+    count: 3
+  - name: PvPTitleFemale
+    type: array
+    count: 3
+  - name: Point

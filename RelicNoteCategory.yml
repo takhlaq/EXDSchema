@@ -2,4 +2,4 @@ name: RelicNoteCategory
 displayField: Text
 fields:
   - name: Text
-  - name: Unknown0
+  - name: UIPriority

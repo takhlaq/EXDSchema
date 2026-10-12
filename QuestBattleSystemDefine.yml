@@ -1,5 +1,5 @@
 name: QuestBattleSystemDefine
-displayField: Text
+displayField: DefineName
 fields:
-  - name: Text
+  - name: DefineName
   - name: DefineValue

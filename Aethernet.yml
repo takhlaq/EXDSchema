@@ -1,0 +1,7 @@
+name: Aethernet
+fields:
+  - name: PopRange
+  - name: TransferName
+    type: link
+    targets:
+      - PlaceName

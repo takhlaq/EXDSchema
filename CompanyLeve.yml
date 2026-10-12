@@ -3,32 +3,37 @@ fields:
   - name: RoutePointTime
     type: array
     count: 8
-  - name: CompanyLeveStruct
+    fields:
+      - name: RoutePointTime
+  - name: Entry
     type: array
     count: 8
     fields:
-      - name: BNpcName
+      - name: NameId
         type: link
-        targets: [BNpcName]
-      - name: ToDoParam
+        targets:
+          - BNpcName
+      - name: Param
         type: array
         count: 6
-      - name: BaseID
+      - name: BaseId
+      - name: DropEventItemId
         type: link
-        targets: [EventItem, BNpcBase]
-      - name: ItemsInvolved
-        type: link
-        targets: [EventItem]
-      - name: EnemyLevel
-      - name: ItemsInvolvedQty
-      - name: ItemDropRate
+        targets:
+          - EventItem
+      - name: Level
+      - name: DropEventItemMax
+      - name: DropEventItemRate
       - name: NumOfAppearance
         type: array
         count: 8
-  - name: ToDoSequence
+  - name: Todo
     type: array
     count: 8
+    fields:
+      - name: TodoSequence
   - name: Rule
     type: link
-    targets: [CompanyLeveRule]
-  - name: RuleParam
+    targets:
+      - CompanyLeveRule
+  - name: Variation

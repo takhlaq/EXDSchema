@@ -3,6 +3,6 @@ fields:
   - name: DestBlendGroup
   - name: SrcBlendGroup
   - name: BlendFrame_PC
-  - name: BlendFram_TypeA
-  - name: BlendFram_TypeB
-  - name: BlendFram_TypeC
+  - name: BlendFrame_TypeA
+  - name: BlendFrame_TypeB
+  - name: BlendFrame_TypeC

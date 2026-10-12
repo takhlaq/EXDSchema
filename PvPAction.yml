@@ -1,14 +1,18 @@
 name: PvPAction
-displayField: Action
 fields:
   - name: Action
     type: link
-    targets: [Action]
-  - name: Unknown0
-  - name: Unknown1
-  - name: Unknown2
-  - name: Unknown3
-  - name: Unknown4
+    targets:
+      - Action
+  - name: Trait
+    type: array
+    count: 3
+    fields:
+      - type: link
+        targets:
+          - Trait
+  - name: SkillPoint
+  - name: Rank
   - name: GrandCompany
     type: array
     count: 3

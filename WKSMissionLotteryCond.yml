@@ -1,5 +1,0 @@
-name: WKSMissionLotteryCond
-fields:
-  - name: RequiredFunction
-    type: link
-    targets: [WKSFunction]

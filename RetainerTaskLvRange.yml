@@ -1,4 +1,4 @@
 name: RetainerTaskLvRange
 fields:
-  - name: Min
-  - name: Max
+  - name: MinLv
+  - name: MaxLv

@@ -2,6 +2,7 @@ name: ContentTalk
 displayField: Text
 fields:
   - name: Text
-  - name: ContentTalkParam
+  - name: Param
     type: link
-    targets: [ContentTalkParam]
+    targets:
+      - ContentTalkParam

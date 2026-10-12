@@ -1,5 +1,0 @@
-name: UILevelLookup
-fields:
-  - name: Level
-    type: link
-    targets: [Level]

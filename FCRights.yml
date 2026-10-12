@@ -1,10 +1,7 @@
 name: FCRights
-displayField: Name
+displayField: RightsNameText
 fields:
-  - name: Name
-  - name: Description
+  - name: RightsNameText
+  - name: RightsNameHelp
   - name: Icon
-    type: icon
-  - name: FCRank
-    type: link
-    targets: [FCRank]
+  - name: SortId

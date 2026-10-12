@@ -1,4 +1,4 @@
 name: BattleLeveRule
-displayField: Rule
+displayField: Script
 fields:
-  - name: Rule
+  - name: Script

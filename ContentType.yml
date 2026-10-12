@@ -2,9 +2,7 @@ name: ContentType
 displayField: Name
 fields:
   - name: Name
-  - name: Icon
+  - name: IconLarge
     type: icon
-  - name: IconDutyFinder
+  - name: IconSmall
     type: icon
-  - name: Unknown1
-  - name: Unknown2

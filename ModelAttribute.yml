@@ -1,4 +1,0 @@
-name: ModelAttribute
-displayField: Name
-fields:
-  - name: Name

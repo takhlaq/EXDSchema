@@ -1,6 +1,0 @@
-name: ContentEventItem
-displayField: EventItem
-fields:
-  - name: EventItem
-    type: link
-    targets: [EventItem]

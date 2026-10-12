@@ -1,4 +1,13 @@
 name: SwitchTalk
 fields:
-  - name: Unknown0
+  - name: TalkCase
+    type: array
+    count: 16
+    fields:
+      - name: CaseCondition
+      - name: Talk
+        type: link
+        targets:
+          - DefaultTalk
+          - CustomTalk
   - name: Unknown1

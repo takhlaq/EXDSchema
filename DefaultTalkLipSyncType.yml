@@ -1,6 +1,3 @@
 name: DefaultTalkLipSyncType
-displayField: ActionTimeline
 fields:
-  - name: ActionTimeline
-    type: link
-    targets: [ActionTimeline]
+  - name: ActionTimeLine

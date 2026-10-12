@@ -1,9 +1,0 @@
-name: WKSMissionRecipe
-fields:
-  - name: Recipe
-    type: array
-    count: 5
-    fields:
-      - type: link
-        targets: [Recipe]
-  - name: Unknown0
